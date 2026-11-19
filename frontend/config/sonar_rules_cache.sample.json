@@ -1,0 +1,967 @@
+{
+  "_description": "Cache otomatis metadata dan pemetaan SonarQube Rule ke MITRE CWE ID via SonarQube API",
+  "mappings": {
+    "php:S1135": "CWE-546",
+    "S1135": "CWE-546",
+    "php:S7980": "CWE-798",
+    "S7980": "CWE-798",
+    "php:S2092": "CWE-614",
+    "S2092": "CWE-614",
+    "php:S3330": "CWE-1004",
+    "S3330": "CWE-1004",
+    "php:S4790": "CWE-1240",
+    "S4790": "CWE-1240",
+    "javascript:S1135": "CWE-546",
+    "javascript:S1874": "CWE-477",
+    "S1874": "CWE-477",
+    "javascript:S2486": "CWE-390",
+    "S2486": "CWE-390",
+    "javascript:S1854": "CWE-563",
+    "S1854": "CWE-563",
+    "php:S5693": "CWE-770",
+    "S5693": "CWE-770",
+    "php:S112": "CWE-397",
+    "S112": "CWE-397",
+    "php:S2068": "CWE-798",
+    "S2068": "CWE-798",
+    "javascript:S905": "CWE-482",
+    "S905": "CWE-482",
+    "javascript:S2245": "CWE-338",
+    "S2245": "CWE-338",
+    "php:S836": "CWE-457",
+    "S836": "CWE-457",
+    "php:S2612": "CWE-732",
+    "S2612": "CWE-732",
+    "php:S3649": "CWE-89",
+    "S3649": "CWE-89",
+    "php:S4502": "CWE-352",
+    "S4502": "CWE-352",
+    "php:S4507": "CWE-497",
+    "S4507": "CWE-497",
+    "php:S6341": "CWE-79",
+    "S6341": "CWE-79",
+    "php:S6348": "CWE-79",
+    "S6348": "CWE-79",
+    "Web:S6819": "CWE-693",
+    "S6819": "CWE-693",
+    "javascript:S4036": "CWE-1333",
+    "S4036": "CWE-1333",
+    "php:S6345": "CWE-918",
+    "S6345": "CWE-918"
+  },
+  "metadata": {
+    "php:S2092": {
+      "rule_key": "php:S2092",
+      "name": "Cookies should have the \"secure\" flag",
+      "type": "VULNERABILITY",
+      "severity": "MINOR",
+      "cwe": [
+        "CWE-311",
+        "CWE-315",
+        "CWE-614"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A4",
+        "Top 10 2021 Category A5",
+        "Top 10 2017 Category A3"
+      ]
+    },
+    "php:S3330": {
+      "rule_key": "php:S3330",
+      "name": "Cookies should have the \"HttpOnly\" flag",
+      "type": "VULNERABILITY",
+      "severity": "MINOR",
+      "cwe": [
+        "CWE-1004"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A5",
+        "Top 10 2017 Category A7"
+      ]
+    },
+    "php:S1131": {
+      "rule_key": "php:S1131",
+      "name": "Lines should not end with trailing whitespaces",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S113": {
+      "rule_key": "php:S113",
+      "name": "Files should end with a newline",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1192": {
+      "rule_key": "php:S1192",
+      "name": "String literals should not be duplicated",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1142": {
+      "rule_key": "php:S1142",
+      "name": "Functions should not contain too many return statements",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1448": {
+      "rule_key": "php:S1448",
+      "name": "Classes should not have too many methods",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S138": {
+      "rule_key": "php:S138",
+      "name": "Functions should not have too many lines of code",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1172": {
+      "rule_key": "php:S1172",
+      "name": "Unused function parameters should be removed",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S3358": {
+      "rule_key": "php:S3358",
+      "name": "Ternary operators should not be nested",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:S6853": {
+      "rule_key": "Web:S6853",
+      "name": "Label elements should have a text label and an associated control",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:S6827": {
+      "rule_key": "Web:S6827",
+      "name": "Anchors should contain accessible content",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:InputWithoutLabelCheck": {
+      "rule_key": "Web:InputWithoutLabelCheck",
+      "name": "\"input\", \"select\" and \"textarea\" tags should be labeled",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1186": {
+      "rule_key": "php:S1186",
+      "name": "Methods should not be empty",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7726": {
+      "rule_key": "javascript:S7726",
+      "name": "Default exports should be named",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S4790": {
+      "rule_key": "php:S4790",
+      "name": "Weak hashing algorithms should not be used",
+      "type": "VULNERABILITY",
+      "severity": "CRITICAL",
+      "cwe": [
+        "CWE-1240"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A2",
+        "Top 10 2017 Category A3",
+        "Top 10 2017 Category A6"
+      ]
+    },
+    "php:S3776": {
+      "rule_key": "php:S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S4144": {
+      "rule_key": "php:S4144",
+      "name": "Methods should not have identical implementations",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1066": {
+      "rule_key": "php:S1066",
+      "name": "Mergeable \"if\" statements should be combined",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S107": {
+      "rule_key": "php:S107",
+      "name": "Functions should not have too many parameters",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1481": {
+      "rule_key": "php:S1481",
+      "name": "Unused local variables should be removed",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3358": {
+      "rule_key": "javascript:S3358",
+      "name": "Ternary operators should not be nested",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S5843": {
+      "rule_key": "javascript:S5843",
+      "name": "Regular expressions should not be too complicated",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S2301": {
+      "rule_key": "javascript:S2301",
+      "name": "Methods should not contain selector parameters",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S8786": {
+      "rule_key": "javascript:S8786",
+      "name": "Regular expressions should not cause non-linear backtracking",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6671": {
+      "rule_key": "javascript:S6671",
+      "name": "Literals should not be used for promise rejection",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7770": {
+      "rule_key": "javascript:S7770",
+      "name": "Wrapper functions around built-in type conversion functions should be avoided",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6557": {
+      "rule_key": "javascript:S6557",
+      "name": "Ends of strings should be checked with \"startsWith()\" and \"endsWith()\"",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6582": {
+      "rule_key": "javascript:S6582",
+      "name": "Optional chaining should be preferred",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7773": {
+      "rule_key": "javascript:S7773",
+      "name": "Number static methods and properties should be preferred over global equivalents",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7756": {
+      "rule_key": "javascript:S7756",
+      "name": "Modern Blob methods should be used instead of FileReader",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7759": {
+      "rule_key": "javascript:S7759",
+      "name": "Use \"Date.now()\" instead of creating Date objects to get current timestamp",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7741": {
+      "rule_key": "javascript:S7741",
+      "name": "\"typeof\" should not be used to check for \"undefined\"",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3504": {
+      "rule_key": "javascript:S3504",
+      "name": "Variables should be declared with \"let\" or \"const\"",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7723": {
+      "rule_key": "javascript:S7723",
+      "name": "Built-in constructors should be called consistently with or without \"new\"",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7755": {
+      "rule_key": "javascript:S7755",
+      "name": "Complex index access patterns should be replaced with \".at()\" method",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6594": {
+      "rule_key": "javascript:S6594",
+      "name": "\"RegExp.exec()\" should be preferred over \"String.match()\"",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6019": {
+      "rule_key": "javascript:S6019",
+      "name": "Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6035": {
+      "rule_key": "javascript:S6035",
+      "name": "Single-character alternations in regular expressions should be replaced with character classes",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7765": {
+      "rule_key": "javascript:S7765",
+      "name": "Existence checks should use \".includes()\" instead of \".indexOf()\" or \".lastIndexOf()\"",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S4138": {
+      "rule_key": "javascript:S4138",
+      "name": "\"for of\" should be used with Iterables",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3776": {
+      "rule_key": "javascript:S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6653": {
+      "rule_key": "javascript:S6653",
+      "name": "Use Object.hasOwn static method instead of hasOwnProperty",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7721": {
+      "rule_key": "javascript:S7721",
+      "name": "Functions should be moved to the highest possible scope",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3696": {
+      "rule_key": "javascript:S3696",
+      "name": "Literals should not be thrown",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3800": {
+      "rule_key": "javascript:S3800",
+      "name": "Functions should always return the same type",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6660": {
+      "rule_key": "javascript:S6660",
+      "name": "If statements should not be the only statement in else blocks",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7780": {
+      "rule_key": "javascript:S7780",
+      "name": "String literals with escaped backslashes should use `String.raw` template literals",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S1135": {
+      "rule_key": "javascript:S1135",
+      "name": "Track uses of \"TODO\" tags",
+      "type": "CODE_SMELL",
+      "severity": "INFO",
+      "cwe": [
+        "CWE-546"
+      ],
+      "owasp": []
+    },
+    "javascript:S1874": {
+      "rule_key": "javascript:S1874",
+      "name": "Deprecated APIs should not be used",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [
+        "CWE-477"
+      ],
+      "owasp": []
+    },
+    "javascript:S1125": {
+      "rule_key": "javascript:S1125",
+      "name": "Boolean literals should not be used in comparisons",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7781": {
+      "rule_key": "javascript:S7781",
+      "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6353": {
+      "rule_key": "javascript:S6353",
+      "name": "Regular expression quantifiers and character classes should be used concisely",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6397": {
+      "rule_key": "javascript:S6397",
+      "name": "Character classes in regular expressions should not contain only one character",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7732": {
+      "rule_key": "javascript:S7732",
+      "name": "\"instanceof\" should not be used with built-in objects",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7758": {
+      "rule_key": "javascript:S7758",
+      "name": "Unicode-aware string methods should be used for proper character handling",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7740": {
+      "rule_key": "javascript:S7740",
+      "name": "Variables should not be assigned the value of \"this\"",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6644": {
+      "rule_key": "javascript:S6644",
+      "name": "Ternary operator should not be used instead of simpler alternatives",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7761": {
+      "rule_key": "javascript:S7761",
+      "name": "Data attributes should be accessed using \".dataset\"",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6637": {
+      "rule_key": "javascript:S6637",
+      "name": "Unnecessary calls to \".bind()\" should not be used",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S2486": {
+      "rule_key": "javascript:S2486",
+      "name": "Exceptions should not be ignored",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [
+        "CWE-390"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A9",
+        "Top 10 2017 Category A10"
+      ]
+    },
+    "javascript:S2392": {
+      "rule_key": "javascript:S2392",
+      "name": "Variables should be used in the blocks where they are declared",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S4144": {
+      "rule_key": "javascript:S4144",
+      "name": "Functions should not have identical implementations",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7762": {
+      "rule_key": "javascript:S7762",
+      "name": "DOM nodes should be removed using \"remove()\" instead of \"removeChild()\"",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S1854": {
+      "rule_key": "javascript:S1854",
+      "name": "Unused assignments should be removed",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-563"
+      ],
+      "owasp": []
+    },
+    "javascript:S3516": {
+      "rule_key": "javascript:S3516",
+      "name": "Function returns should not be invariant",
+      "type": "CODE_SMELL",
+      "severity": "BLOCKER",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6959": {
+      "rule_key": "javascript:S6959",
+      "name": "\"Array.reduce()\" calls should include an initial value",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7727": {
+      "rule_key": "javascript:S7727",
+      "name": "Function references should not be passed directly to iterator methods",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S2004": {
+      "rule_key": "javascript:S2004",
+      "name": "Functions should not be nested too deeply",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6325": {
+      "rule_key": "javascript:S6325",
+      "name": "Regular expression literals should be used when possible",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7744": {
+      "rule_key": "javascript:S7744",
+      "name": "Unnecessary fallback objects should not be used when spreading in object literals",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:S6819": {
+      "rule_key": "Web:S6819",
+      "name": "Prefer tag over ARIA role",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S5693": {
+      "rule_key": "php:S5693",
+      "name": "HTTP request content length should be limited",
+      "type": "VULNERABILITY",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-770",
+        "CWE-400"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A5",
+        "Top 10 2017 Category A6"
+      ]
+    },
+    "php:S1488": {
+      "rule_key": "php:S1488",
+      "name": "Local variables should not be declared and then immediately returned or thrown",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S112": {
+      "rule_key": "php:S112",
+      "name": "Generic exceptions ErrorException, RuntimeException and Exception should not be thrown",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-397"
+      ],
+      "owasp": []
+    },
+    "Web:S6807": {
+      "rule_key": "Web:S6807",
+      "name": "DOM elements with ARIA roles should have the required properties",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S3801": {
+      "rule_key": "php:S3801",
+      "name": "Functions should use \"return\" consistently",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S117": {
+      "rule_key": "php:S117",
+      "name": "Local variable and function parameter names should comply with a naming convention",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S100": {
+      "rule_key": "php:S100",
+      "name": "Function names should comply with a naming convention",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:MouseEventWithoutKeyboardEquivalentCheck": {
+      "rule_key": "Web:MouseEventWithoutKeyboardEquivalentCheck",
+      "name": "Mouse events should have corresponding keyboard events",
+      "type": "BUG",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S6635": {
+      "rule_key": "javascript:S6635",
+      "name": "Constructors should not return values",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S3626": {
+      "rule_key": "javascript:S3626",
+      "name": "Jump statements should not be redundant",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:ItemTagNotWithinContainerTagCheck": {
+      "rule_key": "Web:ItemTagNotWithinContainerTagCheck",
+      "name": "\"<li>\" and \"<dt>\" item tags should be in \"<ul>\", \"<ol>\" or \"<dl>\" container tags",
+      "type": "BUG",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:S7927": {
+      "rule_key": "Web:S7927",
+      "name": "Visible label text should be part of the accessible name",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S1155": {
+      "rule_key": "php:S1155",
+      "name": "\"empty()\" should be used to test for emptiness",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S2068": {
+      "rule_key": "php:S2068",
+      "name": "Credentials should not be hard-coded",
+      "type": "VULNERABILITY",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-798",
+        "CWE-259"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A7",
+        "Top 10 2017 Category A2"
+      ]
+    },
+    "php:S6035": {
+      "rule_key": "php:S6035",
+      "name": "Single-character alternations in regular expressions should be replaced with character classes",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7753": {
+      "rule_key": "javascript:S7753",
+      "name": "\"indexOf()\" and \"lastIndexOf()\" should be used instead of \"findIndex()\" and \"findLastIndex()\" for simple equality searches",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S905": {
+      "rule_key": "javascript:S905",
+      "name": "Non-empty statements should change control flow or have at least one side-effect",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-482"
+      ],
+      "owasp": []
+    },
+    "Web:S5255": {
+      "rule_key": "Web:S5255",
+      "name": "\"aria-label\" or \"aria-labelledby\" attributes should be used to differentiate similar elements",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S6353": {
+      "rule_key": "php:S6353",
+      "name": "Regular expression quantifiers and character classes should be used concisely",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S108": {
+      "rule_key": "php:S108",
+      "name": "Nested blocks of code should not be left empty",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S110": {
+      "rule_key": "php:S110",
+      "name": "Inheritance tree of classes should not be too deep",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S2245": {
+      "rule_key": "javascript:S2245",
+      "name": "Pseudorandom number generators (PRNGs) should not be used in security contexts",
+      "type": "VULNERABILITY",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-338",
+        "CWE-330",
+        "CWE-326",
+        "CWE-1241"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A2",
+        "Top 10 2017 Category A3"
+      ]
+    },
+    "javascript:S6535": {
+      "rule_key": "javascript:S6535",
+      "name": "Unnecessary character escapes should be removed",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S1871": {
+      "rule_key": "javascript:S1871",
+      "name": "Two branches in a conditional structure should not have exactly the same implementation",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "javascript:S7784": {
+      "rule_key": "javascript:S7784",
+      "name": "\"structuredClone()\" should be used instead of other deep cloning methods",
+      "type": "CODE_SMELL",
+      "severity": "MINOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:S6825": {
+      "rule_key": "Web:S6825",
+      "name": "Focusable elements should not have \"aria-hidden\" attribute",
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S115": {
+      "rule_key": "php:S115",
+      "name": "Constant names should comply with a naming convention",
+      "type": "CODE_SMELL",
+      "severity": "CRITICAL",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S836": {
+      "rule_key": "php:S836",
+      "name": "Variables should be initialized before use",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-457"
+      ],
+      "owasp": []
+    },
+    "Web:S5256": {
+      "rule_key": "Web:S5256",
+      "name": "Tables should have headers",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "Web:TableHeaderHasIdOrScopeCheck": {
+      "rule_key": "Web:TableHeaderHasIdOrScopeCheck",
+      "name": "\"<th>\" tags should have \"id\" or \"scope\" attributes",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S2612": {
+      "rule_key": "php:S2612",
+      "name": "File permissions should not be set to world-accessible values",
+      "type": "VULNERABILITY",
+      "severity": "MAJOR",
+      "cwe": [
+        "CWE-266",
+        "CWE-732"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A1",
+        "Top 10 2021 Category A4",
+        "Top 10 2017 Category A5"
+      ]
+    },
+    "javascript:S1848": {
+      "rule_key": "javascript:S1848",
+      "name": "Objects should not be created to be dropped immediately without being used",
+      "type": "BUG",
+      "severity": "MAJOR",
+      "cwe": [],
+      "owasp": []
+    },
+    "php:S3649": {
+      "cwe": [
+        "CWE-89"
+      ],
+      "owasp": [
+        "Top 10 2021 Category A3"
+      ]
+    },
+    "php:S7980": {
+      "rule_key": "php:S7980",
+      "name": "Hardcoded credentials",
+      "type": "VULNERABILITY",
+      "severity": "CRITICAL",
+      "cwe": [
+        "CWE-798"
+      ],
+      "owasp": []
+    }
+  }
+}

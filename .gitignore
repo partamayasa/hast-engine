@@ -1,0 +1,112 @@
+# ==============================================================================
+# Git Ignore Configuration - HAST Vulnerability Assessment Model
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. System & Operating System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ------------------------------------------------------------------------------
+# 2. IDEs, Text Editors, & Developer Tooling
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+.agents/
+.claude/
+AGENTS.md
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# 3. Virtual Environments & Package Managers
+# ------------------------------------------------------------------------------
+.venv/
+ENV/
+env/
+venv/
+lib/
+pip-setuptools-index_cache/
+
+# ------------------------------------------------------------------------------
+# 4. Python Cache, Test Runs, & Runtime Artifacts
+# ------------------------------------------------------------------------------
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+.streamlit/secrets.toml
+
+# ------------------------------------------------------------------------------
+# 5. Logs, Backups, & Diagnostic Traces
+# ------------------------------------------------------------------------------
+*.bak
+*.log
+logs/*
+!logs/.gitkeep
+!logs/README.md
+
+# ------------------------------------------------------------------------------
+# 6. Database & Local SQLite Storage
+# ------------------------------------------------------------------------------
+*.db
+*.db-journal
+*.sqlite3
+*.wal
+database/*
+!database/.gitkeep
+!database/README.md
+
+# ------------------------------------------------------------------------------
+# 7. AI Models, Training Artifacts, & Raw NVD Corpora
+# ------------------------------------------------------------------------------
+ai-model/artifacts/*
+!ai-model/artifacts/.gitkeep
+
+ai-model/data/*
+!ai-model/data/.gitkeep
+!ai-model/data/model_training_result.json
+!ai-model/data/model_evaluation_result.json
+!ai-model/data/model_comparison_result.json
+
+# ------------------------------------------------------------------------------
+# 8. Security Scanner Reports & Sample Dumps
+# ------------------------------------------------------------------------------
+sample-reports/*
+!sample-reports/.gitkeep
+!sample-reports/README.md
+!sample-reports/*.json
+tools/data/*
+!tools/data/.gitkeep
+
+# ------------------------------------------------------------------------------
+# 9. Local Configurations & Environment Secrets (Sample files are tracked)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+ai_config.json
+app_config.json
+sonar_rules_cwe.json
+sonar_rules_cache.json
+excluded_domains.json
+system_summary.json
+
+# ------------------------------------------------------------------------------
+# 10. Local Scripts & Execution Shells
+# ------------------------------------------------------------------------------
+app.sh
+!app.sh.sample
+
+# ------------------------------------------------------------------------------
+# v2 (DSS) runtime files
+# ------------------------------------------------------------------------------
+dss_config.json
+.venv-*/
+!.env.sample

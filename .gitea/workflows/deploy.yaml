@@ -1,0 +1,32 @@
+# Deployment manual lewat SSH (dipicu manual dari tab Actions, tidak pernah otomatis).
+# Secret repositori yang wajib: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PATH.
+# Server harus sudah memiliki Docker, klon repositori, .env yang terisi, dan artefak model.
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Git ref to deploy"
+        required: true
+        default: "main"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            set -e
+            cd "${{ secrets.DEPLOY_PATH }}"
+            git fetch --tags origin
+            git checkout "${{ inputs.ref }}"
+            git pull --ff-only origin "${{ inputs.ref }}" || true
+            python3 tools/backup_db/app.py --keep 14 || echo "Backup dilewati"
+            docker compose up -d --build
+            docker compose ps

@@ -1,0 +1,7 @@
+{
+  "api_title": "Sistem Pendukung Keputusan Penilaian Kerentanan HAST",
+  "api_description": "Decision Support System (DSS) Manajemen Kerentanan: Integrasi Pemindaian SAST & DAST Berbasis Machine Learning dan XAI",
+  "app_version": "1.0.0",
+  "active_model": "Random Forest",
+  "dataset_timestamp": "2026-10-13"
+}

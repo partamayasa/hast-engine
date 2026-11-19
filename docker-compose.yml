@@ -1,0 +1,67 @@
+# HAST DSS — tumpukan produksi: API (FastAPI, port 8000) + UI (Streamlit, port 8501) di balik Nginx Proxy Manager.
+#
+#   docker network create proxy                       # sekali; jaringan bersama dengan Nginx Proxy Manager
+#   docker network connect proxy <container-npm>      # sekali, bila NPM belum tersambung ke jaringan ini
+#   cp .env.sample .env      # isi HAST_JWT_SECRET, HAST_ADMIN_*, PUBLIC_API_BASE_URL (https://<domain>)
+#   docker compose up -d --build
+#
+# Port 8000/8501 tidak dibuka ke host. NPM menjangkau container melalui alias hast-ui:8501 dan hast-api:8000
+# (lihat bagian Deployment di README).
+#
+# Data runtime tetap berada di host dan di-bind-mount (tidak pernah dimasukkan ke dalam image):
+#   database/ (SQLite + cadangan), ai-model/artifacts (model .pkl), ai-model/data (tabel lookup, hasil),
+#   serta berkas konfigurasi JSON runtime.
+x-app: &app
+  build: .
+  image: hast-dss:latest
+  restart: unless-stopped
+  env_file: .env
+  volumes:
+    - ./database:/app/database
+    - ./logs:/app/logs
+    - ./ai-model/artifacts:/app/ai-model/artifacts:ro
+    - ./ai-model/data:/app/ai-model/data:ro
+    - ./ai-model/config:/app/ai-model/config:ro
+    - ./backend/config:/app/backend/config
+    - ./frontend/config:/app/frontend/config
+
+services:
+  api:
+    <<: *app
+    # Satu worker: SQLite (WAL) menangani pembacaan serentak; satu penulis menjaga sistem tetap sederhana dan aman.
+    command: ["uvicorn", "backend.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    networks:
+      default:
+      proxy:
+        aliases: [hast-api]
+    environment:
+      HAST_ENVIRONMENT: production
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+
+  ui:
+    <<: *app
+    command: ["streamlit", "run", "frontend/app.py", "--server.port", "8501", "--server.address", "0.0.0.0",
+              "--server.headless", "true"]
+    environment:
+      API_BASE_URL: http://api:8000
+      # Alamat API yang dapat dijangkau peramban (tautan unduhan laporan sampel). Di balik NPM: https://<domain>,
+      # karena /api dan /sample-reports diteruskan NPM ke hast-api:8000 pada domain yang sama.
+      PUBLIC_API_BASE_URL: ${PUBLIC_API_BASE_URL:-http://localhost:8000}
+    networks:
+      default:
+      proxy:
+        aliases: [hast-ui]
+    depends_on:
+      api:
+        condition: service_healthy
+
+networks:
+  # Jaringan eksternal yang juga disambungkan ke container Nginx Proxy Manager.
+  proxy:
+    external: true
+    name: ${PROXY_NETWORK:-proxy}

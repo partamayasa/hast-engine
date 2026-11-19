@@ -1,0 +1,18 @@
+# Alternatif docker-compose: menjalankan antarmuka Streamlit dengan systemd (lihat hast-api.service).
+[Unit]
+Description=HAST DSS - Dashboard (Streamlit)
+After=network.target hast-api.service
+Requires=hast-api.service
+
+[Service]
+Type=simple
+User=hast
+WorkingDirectory=/srv/hast
+EnvironmentFile=/srv/hast/.env
+Environment=API_BASE_URL=http://127.0.0.1:8000
+ExecStart=/srv/hast/.venv/bin/streamlit run frontend/app.py --server.port 8501 --server.address 127.0.0.1 --server.headless true
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

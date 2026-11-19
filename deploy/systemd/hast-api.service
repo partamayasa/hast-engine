@@ -1,0 +1,20 @@
+# Alternatif docker-compose: menjalankan API dengan systemd.
+# Pemasangan: sudo cp deploy/systemd/hast-*.service /etc/systemd/system/ && sudo systemctl daemon-reload
+#              sudo systemctl enable --now hast-api hast-ui
+# Sesuaikan User dan WorkingDirectory dengan tata letak server.
+[Unit]
+Description=HAST DSS - Backend API (FastAPI)
+After=network.target
+
+[Service]
+Type=simple
+User=hast
+WorkingDirectory=/srv/hast
+EnvironmentFile=/srv/hast/.env
+Environment=HAST_ENVIRONMENT=production
+ExecStart=/srv/hast/.venv/bin/uvicorn backend.api:app --host 127.0.0.1 --port 8000 --proxy-headers
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

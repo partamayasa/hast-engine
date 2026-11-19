@@ -1,0 +1,15 @@
+{
+  "active_model": "Random Forest",
+  "escalation_rate": 0.10,
+  "preprocessing": {
+    "comparison_scheme": "k-fold",
+    "max_features": 5000
+  },
+  "model_hyperparameters": {
+    "random_forest": {
+      "criterion": "squared_error",
+      "n_estimators": 100,
+      "max_depth": 25
+    }
+  }
+}

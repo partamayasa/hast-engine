@@ -1,0 +1,61 @@
+[
+    {
+        "test_id": 1784378935,
+        "timestamp": "2026-07-18 20:48:55",
+        "active_model": "Random Forest",
+        "results": [
+            {
+                "Algorithm": "Random Forest Regressor",
+                "Mean Training Time (s)": 40.84,
+                "Mean MAE": 1.0678,
+                "Mean RMSE": 1.5076,
+                "Mean R2 Score": 0.5848,
+                "Mean Accuracy": 0.6707,
+                "Mean Precision": 0.4966,
+                "Mean Recall": 0.4543,
+                "Mean F1-Score": 0.4683
+            }
+        ],
+        "confusion_matrix": [
+            [
+                3015,
+                1634,
+                154,
+                91
+            ],
+            [
+                726,
+                9814,
+                1524,
+                312
+            ],
+            [
+                63,
+                2442,
+                5311,
+                394
+            ],
+            [
+                1,
+                409,
+                1334,
+                479
+            ]
+        ],
+        "shap_analysis": {
+            "evaluated_model": "Random Forest Regressor",
+            "top_contributing_features": {
+                "site": 0.3520647589568413,
+                "unauthenticated": 0.23450867077833565,
+                "code": 0.17910213855274418,
+                "scripting": 0.13051621631436242,
+                "execute": 0.11971663184912992,
+                "privileges": 0.10300781859266804,
+                "arbitrary": 0.07636262479611684,
+                "authentication": 0.07390183429018908,
+                "cross": 0.05752974106612762,
+                "manipulation": 0.05492069922846929
+            }
+        }
+    }
+]

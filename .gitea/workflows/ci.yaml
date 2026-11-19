@@ -1,0 +1,29 @@
+# Integrasi berkelanjutan: pemeriksaan lock + rangkaian tes pada setiap push / pull request.
+# Artefak model (*.pkl) diabaikan git, sehingga tes bertanda `requires_model` (termasuk uji regresi
+# emas) otomatis dilewati di sini; jalankan secara lokal sebelum rilis.
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/0.11.8/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Verify lock file is up to date
+        run: uv lock --check
+
+      - name: Install dependencies (locked)
+        run: uv sync --frozen
+
+      - name: Run tests
+        run: uv run pytest -q
