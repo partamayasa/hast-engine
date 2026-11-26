@@ -1,0 +1,3563 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Fri, 6 Nov 2026 13:07:49",
+	"created": "2026-11-06T13:07:49.262795565Z",
+	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.warn",
+			"description": "ZAP warnings logged - see the zap.log file for details",
+			"statistic": "481"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://app.example.com",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "65"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://app.example.com",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "34"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://app.example.com",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://app.example.com",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "http://app.example.com",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "57"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "6"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "https://app.example.com",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "16"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "https://app.example.com",
+			"key": "insight.code.5xx",
+			"description": "Percentage of responses with status code 5xx",
+			"statistic": "19"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.application/javascript",
+			"description": "Percentage of endpoints with content type application/javascript",
+			"statistic": "21"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "21"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.font/woff2",
+			"description": "Percentage of endpoints with content type font/woff2",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.image/svg+xml",
+			"description": "Percentage of endpoints with content type image/svg+xml",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "4"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "47"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/plain",
+			"description": "Percentage of endpoints with content type text/plain",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "65"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "34"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "70"
+		},
+		{
+			"level": "Info",
+			"reason": "Exceeded Low",
+			"site": "https://app.example.com",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "37"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.endpoint.ctype.font/woff2",
+			"description": "Percentage of endpoints with content type font/woff2",
+			"statistic": "83"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "16"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "6"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://fonts.bunny.net",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "18"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://fonts.bunny.net",
+			"@host": "fonts.bunny.net",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10098",
+					"alertRef": "10098",
+					"alert": "Cross-Domain Misconfiguration",
+					"name": "Cross-Domain Misconfiguration",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
+					"instances":[ 
+						{
+							"id": "240",
+							"uri": "https://fonts.bunny.net/css?family=inter:300,400,500,600,700&display=swap",
+							"nodeName": "https:\/\/fonts.bunny.net\/css (display,family)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "244",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-400-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-400-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "246",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-500-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-500-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "242",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-600-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-600-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						},
+						{
+							"id": "247",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-700-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-700-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
+					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
+					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
+					"cweid": "264",
+					"wascid": "14",
+					"sourceid": "130"
+				},
+				{
+					"pluginid": "10036",
+					"alertRef": "10036-2",
+					"alert": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"name": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>",
+					"instances":[ 
+						{
+							"id": "241",
+							"uri": "https://fonts.bunny.net/css?family=inter:300,400,500,600,700&display=swap",
+							"nodeName": "https:\/\/fonts.bunny.net\/css (display,family)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BunnyCDN-ID1-1201",
+							"otherinfo": ""
+						},
+						{
+							"id": "245",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-400-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-400-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BunnyCDN-ID1-1201",
+							"otherinfo": ""
+						},
+						{
+							"id": "248",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-500-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-500-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BunnyCDN-ID1-1201",
+							"otherinfo": ""
+						},
+						{
+							"id": "243",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-600-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-600-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BunnyCDN-ID1-1201",
+							"otherinfo": ""
+						},
+						{
+							"id": "249",
+							"uri": "https://fonts.bunny.net/inter/files/inter-latin-700-normal.woff2",
+							"nodeName": "https:\/\/fonts.bunny.net\/inter\/files\/inter-latin-700-normal.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "BunnyCDN-ID1-1201",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</p><p>https://www.troyhunt.com/shhh-dont-let-your-response-headers/</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "130"
+				}
+			]
+		},
+		{
+			"@name": "http://app.example.com",
+			"@host": "app.example.com",
+			"@port": "80",
+			"@ssl": "false",
+			"alerts": [ 
+			]
+		},
+		{
+			"@name": "https://app.example.com",
+			"@host": "app.example.com",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "40026",
+					"alertRef": "40026",
+					"alert": "Cross Site Scripting (DOM Based)",
+					"name": "Cross Site Scripting (DOM Based)",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p><p>When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p><p></p><p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p><p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p><p>Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>",
+					"instances":[ 
+						{
+							"id": "390",
+							"uri": "https://app.example.com?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+							"evidence": "",
+							"otherinfo": "The following steps were done to trigger the DOM XSS:\nWith <PAYLOAD_0> as: ?name=abc#<img src=\"random.gif\" onerror=alert(5397)>\nAccess: https://app.example.com<PAYLOAD_0>\nWrite to /html/body/div[1]/section[2]/div[1]/div[2]/form/input the value: <PAYLOAD_0>\nClick element: /html/body/div[1]/section[2]/div[1]/div[2]/form/input\nAccess: https://app.example.com<PAYLOAD_0>\nWrite to /html/body/div[1]/section[4]/div[1]/div/form/input the value: <PAYLOAD_0>\nClick element: /html/body/div[1]/section[4]/div[1]/div/form/input\nAccess: https://app.example.com<PAYLOAD_0>\n"
+						},
+						{
+							"id": "388",
+							"uri": "https://app.example.com/?search=%3Cimg%20src=%22random.gif%22%20onerror=alert(5397)%3E",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "<img src=\"random.gif\" onerror=alert(5397)>",
+							"evidence": "",
+							"otherinfo": "The following steps were done to trigger the DOM XSS:\nWith <PAYLOAD_1> as: %3Cimg%20src=%22random.gif%22%20onerror=alert(5397)%3E\nAccess: https://app.example.com/?search=<PAYLOAD_1>\n"
+						},
+						{
+							"id": "389",
+							"uri": "https://app.example.com/?search=%3Cimg%20src=%22random.gif%22%20onerror=alert(5397)%3E&tag=alpinejs",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "search",
+							"attack": "<img src=\"random.gif\" onerror=alert(5397)>",
+							"evidence": "",
+							"otherinfo": "The following steps were done to trigger the DOM XSS:\nWith <PAYLOAD_1> as: %3Cimg%20src=%22random.gif%22%20onerror=alert(5397)%3E\nAccess: https://app.example.com/?search=<PAYLOAD_1>&tag=alpinejs\n"
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p><p></p><p>Phases: Implementation; Architecture and Design</p><p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p><p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p><p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p><p></p><p>Phase: Architecture and Design</p><p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p><p></p><p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p><p></p><p>Phase: Implementation</p><p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p><p></p><p>To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p><p></p><p>Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p><p></p><p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as \"red\" or \"blue.\"</p><p></p><p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p><p>\t</p>",
+					"otherinfo": "<p>The following steps were done to trigger the DOM XSS:</p><p>With <PAYLOAD_0> as: ?name=abc#<img src=\"random.gif\" onerror=alert(5397)></p><p>Access: https://app.example.com<PAYLOAD_0></p><p>Write to /html/body/div[1]/section[2]/div[1]/div[2]/form/input the value: <PAYLOAD_0></p><p>Click element: /html/body/div[1]/section[2]/div[1]/div[2]/form/input</p><p>Access: https://app.example.com<PAYLOAD_0></p><p>Write to /html/body/div[1]/section[4]/div[1]/div/form/input the value: <PAYLOAD_0></p><p>Click element: /html/body/div[1]/section[4]/div[1]/div/form/input</p><p>Access: https://app.example.com<PAYLOAD_0></p><p></p>",
+					"reference": "<p>https://owasp.org/www-community/attacks/xss/</p><p>https://cwe.mitre.org/data/definitions/79.html</p>",
+					"cweid": "79",
+					"wascid": "8",
+					"sourceid": "13148"
+				},
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "2",
+					"riskdesc": "High (Medium)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"id": "378",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[]}]})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "5600000000000",
+							"otherinfo": "Credit Card Type detected: Maestro"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</p>",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "2426"
+				},
+				{
+					"pluginid": "40018",
+					"alertRef": "40018",
+					"alert": "SQL Injection",
+					"name": "SQL Injection",
+					"riskcode": "3",
+					"confidence": "1",
+					"riskdesc": "High (Low)",
+					"desc": "<p>SQL injection may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "380",
+							"uri": "https://app.example.com/?search=ZAP%27",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "382",
+							"uri": "https://app.example.com/?tag=alpinejs&search=ZAP%27",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "381",
+							"uri": "https://app.example.com/?tag=%27&search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "tag",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "379",
+							"uri": "https://app.example.com/?tag=%27",
+							"nodeName": "https:\/\/app.example.com\/ (tag)",
+							"method": "GET",
+							"param": "tag",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "385",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[]}]})",
+							"method": "POST",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "387",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "params[0]",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "384",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "383",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "386",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "params[0]",
+							"attack": "'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						}
+					],
+					"count": "9",
+					"systemic": false,
+					"solution": "<p>Do not trust client side input, even if there is client side validation in place.</p><p>In general, type check all data on the server side.</p><p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p><p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p><p>If database Stored Procedures can be used, use them.</p><p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p><p>Do not create dynamic SQL queries using simple string concatenation.</p><p>Escape all data received from the client.</p><p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p><p>Apply the principle of least privilege by using the least privileged database user possible.</p><p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p><p>Grant the minimum database access that is necessary for the application.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</p>",
+					"cweid": "89",
+					"wascid": "19",
+					"sourceid": "8179"
+				},
+				{
+					"pluginid": "40024",
+					"alertRef": "40024-2",
+					"alert": "SQL Injection - SQLite (Time Based)",
+					"name": "SQL Injection - SQLite (Time Based)",
+					"riskcode": "3",
+					"confidence": "2",
+					"riskdesc": "High (Medium)",
+					"desc": "<p>SQL injection may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "1172",
+							"uri": "https://app.example.com/?tag=alpinejs&search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "search",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [97] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [262] milliseconds, when the original unmodified query with value [ZAP] took [92] milliseconds."
+						},
+						{
+							"id": "1174",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{search},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [1,923] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [3,799] milliseconds, when the original unmodified query with value [{\"data\":{\"search\":\"\",\"tag\":\"alpinejs\",\"selectedPostId\":null},\"memo\":{\"id\":\"M11Ls3Y1Xa3pQdFTpXUB\",\"name\":\"front-page\",\"path\":\"\\/\",\"method\":\"GET\",\"release\":\"a-a-a\",\"children\":[],\"scripts\":[],\"assets\":[],\"errors\":[],\"locale\":\"en\"},\"checksum\":\"2e7510446ba4c7764a4654f3eb77d43538faed547eec5d005702568461ee3a85\"}] took [79] milliseconds."
+						},
+						{
+							"id": "1175",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [2,272] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [2,576] milliseconds, when the original unmodified query with value [{\"data\":{\"data\":[{\"email\":null},{\"s\":\"arr\"}],\"mountedActions\":[[],{\"s\":\"arr\"}],\"defaultAction\":null,\"defaultActionArguments\":null,\"defaultActionContext\":null,\"defaultTableAction\":null,\"defaultTableActionRecord\":null,\"defaultTableActionArguments\":null,\"componentFileAttachments\":[[],{\"s\":\"arr\"}],\"areSchemaStateUpdateHooksDisabledForTesting\":false,\"discoveredSchemaNames\":[[\"form\",\"content\"],{\"s\":\"arr\"}],\"loadedDeferredSchemas\":[[],{\"s\":\"arr\"}]},\"memo\":{\"id\":\"wdoriNWb5uBTgNfACn4q\",\"name\":\"filament.auth.pages.password-reset.request-password-reset\",\"path\":\"admin\\/password-reset\\/request\",\"method\":\"GET\",\"release\":\"a-a-a\",\"children\":[],\"scripts\":[],\"assets\":[],\"errors\":[],\"locale\":\"en\"},\"checksum\":\"776dd215dc9c8a045c16ad1793df58bb4089ac849de172ee8b4bbb3529c837de\"}] took [90] milliseconds."
+						},
+						{
+							"id": "1177",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [2,277] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [2,918] milliseconds, when the original unmodified query with value [{\"data\":{\"tableConfiguration\":\"example\",\"mountedActions\":[[],{\"s\":\"arr\"}],\"defaultAction\":null,\"defaultActionArguments\":null,\"defaultActionContext\":null,\"defaultTableAction\":null,\"defaultTableActionRecord\":null,\"defaultTableActionArguments\":null,\"componentFileAttachments\":[[],{\"s\":\"arr\"}],\"areSchemaStateUpdateHooksDisabledForTesting\":false,\"discoveredSchemaNames\":[[],{\"s\":\"arr\"}],\"loadedDeferredSchemas\":[[],{\"s\":\"arr\"}],\"isTableLoaded\":false,\"tableGrouping\":null,\"tableRecordsPerPage\":5,\"isTableReordering\":false,\"tableColumnSearches\":[[],{\"s\":\"arr\"}],\"tableSearch\":\"\",\"tableSort\":null,\"selectedTableRecords\":[[],{\"s\":\"arr\"}],\"deselectedTableRecords\":[[],{\"s\":\"arr\"}],\"isTrackingDeselectedTableRecords\":false,\"tableColumns\":[[[{\"type\":\"column\",\"name\":\"name\",\"label\":\"Name\",\"isHidden\":false,\"isToggled\":true,\"isToggleable\":false,\"isToggledHiddenByDefault\":null},{\"s\":\"arr\"}],[{\"type\":\"column\",\"name\":\"email\",\"label\":\"Email address\",\"isHidden\":false,\"isToggled\":true,\"isToggleable\":false,\"isToggledHiddenByDefault\":null},{\"s\":\"arr\"}],[{\"type\":\"column\",\"name\":\"email_verified_at\",\"label\":\"Verified\",\"isHidden\":false,\"isToggled\":true,\"isToggleable\":true,\"isToggledHiddenByDefault\":false},{\"s\":\"arr\"}]],{\"s\":\"arr\"}],\"tableFilters\":[{\"verified\":[{\"isActive\":false},{\"s\":\"arr\"}]},{\"s\":\"arr\"}],\"tableDeferredFilters\":[{\"verified\":[{\"isActive\":false},{\"s\":\"arr\"}]},{\"s\":\"arr\"}],\"paginators\":[{\"page\":11},{\"s\":\"arr\"}]},\"memo\":{\"id\":\"JRM6ndIWygtmHnx7qCGL\",\"name\":\"tables-demo\",\"path\":\"tables\",\"method\":\"GET\",\"release\":\"a-a-a\",\"children\":[],\"scripts\":[],\"assets\":[],\"errors\":[],\"locale\":\"en\"},\"checksum\":\"0489e9da5cdd433b11d7f537f7e52747eb64a26cb05792bad3ae0fc46fb803bd\"}] took [169] milliseconds."
+						},
+						{
+							"id": "1180",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{name,email,password,passwordConfirmation},{s}],mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,meth...)",
+							"method": "POST",
+							"param": "method",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [1,938] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [3,101] milliseconds, when the original unmodified query with value [register] took [452] milliseconds."
+						},
+						{
+							"id": "1179",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [1,944] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [3,225] milliseconds, when the original unmodified query with value [selectTag] took [152] milliseconds."
+						},
+						{
+							"id": "1178",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "case randomblob(100000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [1,934] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [2,580] milliseconds, when the original unmodified query with value [selectTag] took [88] milliseconds."
+						},
+						{
+							"id": "1173",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join ()(email)",
+							"method": "POST",
+							"param": "email",
+							"attack": "case randomblob(10000000) when not null then 1 else 1 end ",
+							"evidence": "",
+							"otherinfo": "The query time is controllable using parameter value [case randomblob(10000000) when not null then 1 else 1 end ], which caused the request to take [1,716] milliseconds, parameter value [case randomblob(100000000) when not null then 1 else 1 end ], which caused the request to take [1,850] milliseconds, when the original unmodified query with value [zaproxy@example.com] took [243] milliseconds."
+						}
+					],
+					"count": "8",
+					"systemic": false,
+					"solution": "<p>Do not trust client side input, even if there is client side validation in place.</p><p>In general, type check all data on the server side.</p><p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p><p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p><p>If database Stored Procedures can be used, use them.</p><p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p><p>Do not create dynamic SQL queries using simple string concatenation.</p><p>Escape all data received from the client.</p><p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p><p>Apply the principle of least privilege by using the least privileged database user possible.</p><p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p><p>Grant the minimum database access that is necessary for the application.</p>",
+					"otherinfo": "<p>The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [97] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [262] milliseconds, when the original unmodified query with value [ZAP] took [92] milliseconds.</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</p>",
+					"cweid": "89",
+					"wascid": "19",
+					"sourceid": "36891"
+				},
+				{
+					"pluginid": "10202",
+					"alertRef": "10202",
+					"alert": "Absence of Anti-CSRF Tokens",
+					"name": "Absence of Anti-CSRF Tokens",
+					"riskcode": "2",
+					"confidence": "1",
+					"riskdesc": "Medium (Low)",
+					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
+					"instances":[ 
+						{
+							"id": "14",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/newsletter/subscribe\" method=\"POST\" class=\"mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"email\" ]."
+						},
+						{
+							"id": "113",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/feedback/submit\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"\" ]."
+						},
+						{
+							"id": "115",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/funds/transfer\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"account\" \"amount\" ]."
+						},
+						{
+							"id": "92",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/newsletter/join\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"email\" ]."
+						},
+						{
+							"id": "116",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/profile/update-email\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"new_email\" ]."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"email\" ].</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "40038",
+					"alertRef": "40038",
+					"alert": "Bypassing 403",
+					"name": "Bypassing 403",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Bypassing 403 endpoints may be possible, the scan rule sent a payload that caused the response to be accessible (status code 200).</p>",
+					"instances":[ 
+						{
+							"id": "1048",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /build",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/build"
+						},
+						{
+							"id": "1049",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /build/assets",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/build/assets"
+						},
+						{
+							"id": "1051",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /css",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/css"
+						},
+						{
+							"id": "1050",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /css/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/css/filament"
+						},
+						{
+							"id": "1052",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /css/filament/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/css/filament/filament"
+						},
+						{
+							"id": "1054",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /fonts",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/fonts"
+						},
+						{
+							"id": "1053",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /fonts/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/fonts/filament"
+						},
+						{
+							"id": "1056",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /fonts/filament/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/fonts/filament/filament"
+						},
+						{
+							"id": "1055",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /fonts/filament/filament/inter",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/fonts/filament/filament/inter"
+						},
+						{
+							"id": "1059",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /images",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/images"
+						},
+						{
+							"id": "1061",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js"
+						},
+						{
+							"id": "1060",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament"
+						},
+						{
+							"id": "1057",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/actions",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/actions"
+						},
+						{
+							"id": "1058",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/filament",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/filament"
+						},
+						{
+							"id": "1062",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/forms",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/forms"
+						},
+						{
+							"id": "1065",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/forms/components",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/forms/components"
+						},
+						{
+							"id": "1067",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/forms/components/text-input",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/forms/components/text-input"
+						},
+						{
+							"id": "1064",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/notifications",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/notifications"
+						},
+						{
+							"id": "1063",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/schemas",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/schemas"
+						},
+						{
+							"id": "1066",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/support",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/support"
+						},
+						{
+							"id": "1068",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/tables",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/tables"
+						},
+						{
+							"id": "1070",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/widgets",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/widgets"
+						},
+						{
+							"id": "1071",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/widgets/components",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/widgets/components"
+						},
+						{
+							"id": "1069",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/widgets/components/stats-overview",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/widgets/components/stats-overview"
+						},
+						{
+							"id": "1072",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "x-original-url: /js/filament/widgets/components/stats-overview/stat",
+							"evidence": "",
+							"otherinfo": "https://app.example.com/js/filament/widgets/components/stats-overview/stat"
+						}
+					],
+					"count": "25",
+					"systemic": false,
+					"solution": "",
+					"otherinfo": "<p>https://app.example.com/build</p>",
+					"reference": "<p>https://www.acunetix.com/blog/articles/a-fresh-look-on-reverse-proxy-related-attacks/</p><p>https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf</p><p>https://seclists.org/fulldisclosure/2011/Oct/273</p>",
+					"cweid": "348",
+					"wascid": "0",
+					"sourceid": "33592"
+				},
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "2",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "61",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "53",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "37",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "30003",
+					"alertRef": "30003",
+					"alert": "Integer Overflow Error",
+					"name": "Integer Overflow Error",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>An integer overflow condition exists when an integer used in a compiled program extends beyond the range limits and has not been properly checked from the input stream.</p>",
+					"instances":[ 
+						{
+							"id": "949",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{search},calls:[]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "57044893411657441365195404505117323669824883",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "951",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{search},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "57045239288870204683986373640575715463935120",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "953",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{search},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "68911002429181840748782530684940416008339417",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "952",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "07398217781034033683233779191672977855274871",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "955",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "13012571323348995583470338749426917412365271",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "950",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "39081412393873236552387572051004856188318332",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "948",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "51901842551921138737661911671255451418905732",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "957",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "52070847366358351294046591374375773587938771",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "956",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "57831188039139739040720290477100236855434120",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "947",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "92126564684419151372489854742485033698648126",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "960",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "33548442962485042630861117934611681965079975",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "954",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "71860764835792512661409785143284335643836065",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "961",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot,updates:{},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "snapshot",
+							"attack": "99137537297261331042711738578117232198792297",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "962",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{email,password,remember},{s}],userUndertakingMultiFactorAuthentication,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},upda...)",
+							"method": "POST",
+							"param": "method",
+							"attack": "44626457532930179696284289162100751868659712",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "967",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{email},{s}],mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "79819961630906877163832321774575065559241236",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "959",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{name,email,password,passwordConfirmation},{s}],mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,meth...)",
+							"method": "POST",
+							"param": "method",
+							"attack": "19532515844632479512152419489632893460399018",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "968",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "61347034698743561607368047571632061640835002",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "958",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{mountedActions:[[],{s}],defaultAction:[[],{s}],defaultActionArguments:[[],{s}],defaultActionContext:[[],{s}],defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "36827741478940036593869489908063434589449297",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "964",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "64505005882144371606190765716868486191732001",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "965",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "47729750634832972607369426915947114912152105",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "966",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "13052580646006638602994066879557181153142954",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "970",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "params[0]",
+							"attack": "04857776379243691301572048481091077536917094",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "963",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "method",
+							"attack": "85885561834506362780870619558908316467586110",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "972",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[[{name,arguments:[[],{s}],context:[{table},{s}],hasUnsavedChangesAlert},{s}]],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearch...)",
+							"method": "POST",
+							"param": "method",
+							"attack": "55850193666055221501388604013827206039085904",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						},
+						{
+							"id": "971",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[[{name,arguments:[[],{s}],context:[{table},{s}],hasUnsavedChangesAlert},{s}]],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearch...)",
+							"method": "POST",
+							"param": "path",
+							"attack": "99999999999999999999999999999999999999999999",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of nines."
+						},
+						{
+							"id": "969",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearches:[[],{s}],tableSearch,tableSort,selectedTableRecords:[[],{s}],deselectedTa...)",
+							"method": "POST",
+							"param": "method",
+							"attack": "06046889653996681022345839214291102276040084",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": "Potential Integer Overflow. Status code changed on the input of a long string of random integers."
+						}
+					],
+					"count": "26",
+					"systemic": false,
+					"solution": "<p>In order to prevent overflows and divide by 0 (zero) errors in the application, please rewrite the backend program, checking if the values of integers being processed are within the application's allowed range. This will require a recompilation of the backend executable.</p>",
+					"otherinfo": "<p>Potential Integer Overflow. Status code changed on the input of a long string of random integers.</p>",
+					"reference": "<p>https://en.wikipedia.org/wiki/Integer_overflow</p><p>https://cwe.mitre.org/data/definitions/190.html</p>",
+					"cweid": "190",
+					"wascid": "3",
+					"sourceid": "32029"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
+					"instances":[ 
+						{
+							"id": "1",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "50",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "68",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "46",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "40025",
+					"alertRef": "40025-2",
+					"alert": "Proxy Disclosure",
+					"name": "Proxy Disclosure",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>2 proxy server(s) were detected or fingerprinted. This information helps a potential attacker to determine</p><p>- A list of targets for an attack against the application.</p><p> - Potential vulnerabilities on the proxy servers that service the application.</p><p> - The presence or absence of any proxy-based components that might cause attacks against the application to be detected, prevented, or mitigated.</p>",
+					"instances":[ 
+						{
+							"id": "976",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.",
+							"evidence": "",
+							"otherinfo": "Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:\n- openresty\n- openresty\nThe following web/application server has been identified:\n- openresty[PHP/8.4.27]\n"
+						},
+						{
+							"id": "973",
+							"uri": "https://app.example.com/?tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (tag)",
+							"method": "GET",
+							"param": "",
+							"attack": "TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.",
+							"evidence": "",
+							"otherinfo": "Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:\n- openresty\n- openresty\nThe following web/application server has been identified:\n- openresty[PHP/8.4.27]\n"
+						},
+						{
+							"id": "975",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer ()(account,amount)",
+							"method": "POST",
+							"param": "",
+							"attack": "TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.",
+							"evidence": "",
+							"otherinfo": "Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:\n- openresty\n- openresty\nThe following web/application server has been identified:\n- openresty[PHP/8.4.27]\n"
+						},
+						{
+							"id": "974",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{email,password,remember},{s}],userUndertakingMultiFactorAuthentication,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},upda...)",
+							"method": "POST",
+							"param": "",
+							"attack": "TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.",
+							"evidence": "",
+							"otherinfo": "Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:\n- openresty\n- openresty\nThe following web/application server has been identified:\n- openresty[PHP/8.4.27]\n"
+						},
+						{
+							"id": "977",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{mountedActions:[[],{s}],defaultAction:[[],{s}],defaultActionArguments:[[],{s}],defaultActionContext:[[],{s}],defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "",
+							"attack": "TRACE, OPTIONS methods with 'Max-Forwards' header. TRACK method.",
+							"evidence": "",
+							"otherinfo": "Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:\n- openresty\n- openresty\nThe following web/application server has been identified:\n- openresty[PHP/8.4.27]\n"
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Disable the 'TRACE' method on the proxy servers, as well as the origin web/application server.</p><p>Disable the 'OPTIONS' method on the proxy servers, as well as the origin web/application server, if it is not required for other purposes, such as 'CORS' (Cross Origin Resource Sharing).</p><p>Configure the web and application servers with custom error pages, to prevent 'fingerprintable' product-specific error pages being leaked to the user in the event of HTTP errors, such as 'TRACK' requests for non-existent pages.</p><p>Configure all proxies, application servers, and web servers to prevent disclosure of the technology and version information in the 'Server' and 'X-Powered-By' HTTP response headers.</p><p></p>",
+					"otherinfo": "<p>Using the TRACE, OPTIONS, and TRACK methods, the following proxy servers have been identified between ZAP and the application/web server:</p><p>- openresty</p><p>- openresty</p><p>The following web/application server has been identified:</p><p>- openresty[PHP/8.4.27]</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7231#section-5.1.2</p>",
+					"cweid": "204",
+					"wascid": "45",
+					"sourceid": "32434"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
+					"instances":[ 
+						{
+							"id": "176",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "211",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "207",
+							"uri": "https://app.example.com/actions",
+							"nodeName": "https:\/\/app.example.com\/actions",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "206",
+							"uri": "https://app.example.com/forms/overview",
+							"nodeName": "https:\/\/app.example.com\/forms\/overview",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "18"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044-1",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"id": "190",
+							"uri": "https://app.example.com/admin",
+							"nodeName": "https:\/\/app.example.com\/admin",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 46 [https://app.example.com/admin/login].\nPredicted response size: 346.\nResponse Body Length: 430."
+						},
+						{
+							"id": "209",
+							"uri": "https://app.example.com/newsletter/subscribe",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/subscribe ()(email)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 34 [https://app.example.com].\nPredicted response size: 334.\nResponse Body Length: 382."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 46 [https://app.example.com/admin/login].</p><p>Predicted response size: 346.</p><p>Response Body Length: 430.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "53"
+				},
+				{
+					"pluginid": "10010",
+					"alertRef": "10010",
+					"alert": "Cookie No HttpOnly Flag",
+					"name": "Cookie No HttpOnly Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "3",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "4",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "frontpage_visitor",
+							"attack": "",
+							"evidence": "Set-Cookie: frontpage_visitor",
+							"otherinfo": ""
+						},
+						{
+							"id": "6",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "Set-Cookie: techlabs-session",
+							"otherinfo": ""
+						},
+						{
+							"id": "5",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "38",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
+					"cweid": "1004",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90027",
+					"alertRef": "90027",
+					"alert": "Cookie Slack Detector",
+					"name": "Cookie Slack Detector",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>Repeated GET requests: drop a different cookie each time, followed by normal request with all cookies to stabilize session, compare responses against original baseline GET. This can reveal areas where cookie based authentication/attributes are not actually enforced.</p>",
+					"instances":[ 
+						{
+							"id": "1076",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit ()(message)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "NOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [techlabs-session]\nNOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [app_session]\nCookies that don't have expected effects can reveal flaws in application logic. In the worst case, this can reveal where authentication via cookie token(s) is not actually enforced.\nThese cookies affected the response: \nThese cookies did NOT affect the response: app_session,techlabs-session,app_provider_state,frontpage_visitor,XSRF-TOKEN,app_visitor,action_demo_pref\n"
+						},
+						{
+							"id": "1077",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{search,tag,selectedPostId},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{search},calls:[{path,method,params:[{}]}]}]})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "NOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [techlabs-session]\nNOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [app_session]\nCookies that don't have expected effects can reveal flaws in application logic. In the worst case, this can reveal where authentication via cookie token(s) is not actually enforced.\nThese cookies affected the response: \nThese cookies did NOT affect the response: app_session,techlabs-session,app_provider_state,frontpage_visitor,XSRF-TOKEN,app_visitor,action_demo_pref\n"
+						}
+					],
+					"count": "2",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "<p>NOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [techlabs-session]</p><p>NOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [app_session]</p><p>Cookies that don't have expected effects can reveal flaws in application logic. In the worst case, this can reveal where authentication via cookie token(s) is not actually enforced.</p><p>These cookies affected the response: </p><p>These cookies did NOT affect the response: app_session,techlabs-session,app_provider_state,frontpage_visitor,XSRF-TOKEN,app_visitor,action_demo_pref</p><p></p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/205.html</p>",
+					"cweid": "205",
+					"wascid": "45",
+					"sourceid": "35072"
+				},
+				{
+					"pluginid": "10011",
+					"alertRef": "10011",
+					"alert": "Cookie Without Secure Flag",
+					"name": "Cookie Without Secure Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
+					"instances":[ 
+						{
+							"id": "10",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "11",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "frontpage_visitor",
+							"attack": "",
+							"evidence": "Set-Cookie: frontpage_visitor",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "Set-Cookie: techlabs-session",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "42",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
+					"cweid": "614",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "7",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "9",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "app_session",
+							"attack": "",
+							"evidence": "Set-Cookie: app_session",
+							"otherinfo": ""
+						},
+						{
+							"id": "8",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "frontpage_visitor",
+							"attack": "",
+							"evidence": "Set-Cookie: frontpage_visitor",
+							"otherinfo": ""
+						},
+						{
+							"id": "39",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "40",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_session",
+							"attack": "",
+							"evidence": "Set-Cookie: app_session",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-2",
+					"alert": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Embedder-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
+					"instances":[ 
+						{
+							"id": "21",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "142",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "140",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "122",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "138",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-3",
+					"alert": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Opener-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
+					"instances":[ 
+						{
+							"id": "22",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "145",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "143",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "125",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "146",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": false,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90004",
+					"alertRef": "90004-1",
+					"alert": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+					"name": "Cross-Origin-Resource-Policy Header Missing or Invalid",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
+					"instances":[ 
+						{
+							"id": "20",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "114",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "120",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "136",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "31",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
+					"cweid": "693",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "110009",
+					"alertRef": "110009",
+					"alert": "Full Path Disclosure",
+					"name": "Full Path Disclosure",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>The full path of files which might be sensitive has been exposed to the client.</p>",
+					"instances":[ 
+						{
+							"id": "326",
+							"uri": "https://app.example.com/tables?page=2",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/home/",
+							"otherinfo": ""
+						},
+						{
+							"id": "323",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearches:[[],{s}],tableSearch,tableSort,selectedTableRecords:[[],{s}],deselectedTa...)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "/home/",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
+					"cweid": "209",
+					"wascid": "13",
+					"sourceid": "701"
+				},
+				{
+					"pluginid": "10023",
+					"alertRef": "10023",
+					"alert": "Information Disclosure - Debug Error Messages",
+					"name": "Information Disclosure - Debug Error Messages",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
+					"instances":[ 
+						{
+							"id": "325",
+							"uri": "https://app.example.com/tables?page=2",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"id": "321",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearches:[[],{s}],tableSearch,tableSort,selectedTableRecords:[[],{s}],deselectedTa...)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Disable debugging messages before pushing to production.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "1295",
+					"wascid": "13",
+					"sourceid": "701"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"id": "19",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "131",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "119",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "135",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "69",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "2",
+					"alertRef": "2",
+					"alert": "Private IP Disclosure",
+					"name": "Private IP Disclosure",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
+					"instances":[ 
+						{
+							"id": "324",
+							"uri": "https://app.example.com/tables?page=2",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.0.22",
+							"otherinfo": "192.168.0.22\n192.168.0.3\n192.168.0.22\n192.168.0.3\n192.168.0.22\n192.168.0.3\n"
+						},
+						{
+							"id": "320",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{tableConfiguration,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}],isTableLoaded,tableGrouping,tableRecordsPerPage,isTableReordering,tableColumnSearches:[[],{s}],tableSearch,tableSort,selectedTableRecords:[[],{s}],deselectedTa...)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.0.22",
+							"otherinfo": "192.168.0.22\n192.168.0.3\n192.168.0.22\n192.168.0.3\n192.168.0.22\n192.168.0.3\n"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Remove the private IP address from the HTTP response body. For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
+					"otherinfo": "<p>192.168.0.22</p><p>192.168.0.3</p><p>192.168.0.22</p><p>192.168.0.3</p><p>192.168.0.22</p><p>192.168.0.3</p><p></p>",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc1918</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "701"
+				},
+				{
+					"pluginid": "10037",
+					"alertRef": "10037",
+					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
+					"instances":[ 
+						{
+							"id": "17",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.27",
+							"otherinfo": ""
+						},
+						{
+							"id": "109",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.27",
+							"otherinfo": ""
+						},
+						{
+							"id": "123",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.27",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.27",
+							"otherinfo": ""
+						},
+						{
+							"id": "59",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.27",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/shhh-dont-let-your-response-headers/</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "202",
+							"uri": "https://app.example.com/build/assets/app-BvRk9kiK.js",
+							"nodeName": "https:\/\/app.example.com\/build\/assets\/app-BvRk9kiK.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "191",
+							"uri": "https://app.example.com/fonts/filament/filament/inter/index.css?v=53f96c91f2d47a0bc4fe15d29684f39222850fad2f6568be574e2e77f70be679",
+							"nodeName": "https:\/\/app.example.com\/fonts\/filament\/filament\/inter\/index.css (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "189",
+							"uri": "https://app.example.com/images/filament.svg",
+							"nodeName": "https:\/\/app.example.com\/images\/filament.svg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "201",
+							"uri": "https://app.example.com/js/filament/actions/actions.js?v=527e2be19eaec12c2de944e851d5373c677640b10bdb08175fa6d6626bdbb02d",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/actions\/actions.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "203",
+							"uri": "https://app.example.com/js/filament/schemas/schemas.js?v=522715eaddf76ab7f24975c52e4b0afac333544ca2fe2f9f7a128410de025a3a",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/schemas\/schemas.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "69"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "103",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1793965579",
+							"otherinfo": "1793965579, which evaluates to: 2026-11-06 11:46:19."
+						},
+						{
+							"id": "219",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1732584194",
+							"otherinfo": "1732584194, which evaluates to: 2024-11-26 01:23:14."
+						},
+						{
+							"id": "221",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1770035416",
+							"otherinfo": "1770035416, which evaluates to: 2026-02-02 12:30:16."
+						},
+						{
+							"id": "222",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1958414417",
+							"otherinfo": "1958414417, which evaluates to: 2032-01-22 20:00:17."
+						},
+						{
+							"id": "220",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2004318071",
+							"otherinfo": "2004318071, which evaluates to: 2033-07-07 03:01:11."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1793965579, which evaluates to: 2026-11-06 11:46:19.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "27"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"id": "16",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "105",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "121",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "100",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "29",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094-3",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"id": "187",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "23",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "186",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "195",
+							"uri": "https://app.example.com/admin",
+							"nodeName": "https:\/\/app.example.com\/admin",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "166",
+							"uri": "https://app.example.com/auth/session-token",
+							"nodeName": "https:\/\/app.example.com\/auth\/session-token",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "171",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "118",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "165",
+							"uri": "https://app.example.com/diagnostics/server-status",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/server-status",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "149",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "196",
+							"uri": "https://app.example.com/fonts/filament/filament/inter/index.css?v=53f96c91f2d47a0bc4fe15d29684f39222850fad2f6568be574e2e77f70be679",
+							"nodeName": "https:\/\/app.example.com\/fonts\/filament\/filament\/inter\/index.css (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/inter-cyrillic-ext-wght-normal-SP7Z6XGK",
+							"otherinfo": "\uFFFD)\uFFFDz\uFFFD\uFFFD\u02B8\uFFFD\uFFFD'>{\\x001b~\uFFFD\\x0008m\uFFFDz+\uFFFD\uFFFD~H\uFFFD\uFFFD\uFFFDq\uFFFD"
+						},
+						{
+							"id": "147",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "130",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						},
+						{
+							"id": "148",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eyJpdiI6IkRJU0FNQVJLQU4ifQ==",
+							"otherinfo": "{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}"
+						}
+					],
+					"count": "13",
+					"systemic": false,
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>{\"iv\":\"DISAMARKAN\",\"value\":\"DISAMARKAN\",\"mac\":\"DISAMARKAN\",\"tag\":\"\"}</p>",
+					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "319",
+					"wascid": "13",
+					"sourceid": "18"
+				},
+				{
+					"pluginid": "90027",
+					"alertRef": "90027",
+					"alert": "Cookie Slack Detector",
+					"name": "Cookie Slack Detector",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Repeated GET requests: drop a different cookie each time, followed by normal request with all cookies to stabilize session, compare responses against original baseline GET. This can reveal areas where cookie based authentication/attributes are not actually enforced.</p>",
+					"instances":[ 
+						{
+							"id": "1075",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{email,password,remember},{s}],userUndertakingMultiFactorAuthentication,mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},upda...)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Dropping this cookie appears to have invalidated the session: [XSRF-TOKEN] A follow-on request with all original cookies still had a different response than the original request.\n"
+						},
+						{
+							"id": "1073",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{email},{s}],mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,method,params:[]}]}]})",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Dropping this cookie appears to have invalidated the session: [XSRF-TOKEN] A follow-on request with all original cookies still had a different response than the original request.\n"
+						},
+						{
+							"id": "1074",
+							"uri": "https://app.example.com/livewire/update",
+							"nodeName": "https:\/\/app.example.com\/livewire\/update ()({_token,components:[{snapshot:{data:{data:[{name,email,password,passwordConfirmation},{s}],mountedActions:[[],{s}],defaultAction,defaultActionArguments,defaultActionContext,defaultTableAction,defaultTableActionRecord,defaultTableActionArguments,componentFileAttachments:[[],{s}],areSchemaStateUpdateHooksDisabledForTesting,discoveredSchemaNames:[[],{s}],loadedDeferredSchemas:[[],{s}]},memo:{id,name,path,method,release,children:[],scripts:[],assets:[],errors:[],locale},checksum},updates:{},calls:[{path,meth...)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Dropping this cookie appears to have invalidated the session: [XSRF-TOKEN] A follow-on request with all original cookies still had a different response than the original request.\n"
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "<p>Dropping this cookie appears to have invalidated the session: [XSRF-TOKEN] A follow-on request with all original cookies still had a different response than the original request.</p><p></p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/205.html</p>",
+					"cweid": "205",
+					"wascid": "45",
+					"sourceid": "34902"
+				},
+				{
+					"pluginid": "120000",
+					"alertRef": "120000-1",
+					"alert": "Information Disclosure - Information in Browser localStorage",
+					"name": "Information Disclosure - Information in Browser localStorage",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Information was stored in browser localStorage.</p><p>This is not unusual or necessarily unsafe - this informational alert has been raised to help you get a better understanding of what this app is doing. For more details see the Client tabs - this information was set directly in the browser and will therefore not necessarily appear in this form in any HTTP(S) messages.</p>",
+					"instances":[ 
+						{
+							"id": "375",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "collapsedGroups",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: collapsedGroups=\"null\"\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "376",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "isOpen",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpen=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "374",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "isOpenDesktop",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpenDesktop=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "373",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=dark\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "275",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=dark\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "300",
+							"uri": "https://app.example.com/?search=ZAP&tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "collapsedGroups",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: collapsedGroups=\"null\"\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "299",
+							"uri": "https://app.example.com/?search=ZAP&tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "isOpen",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpen=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "302",
+							"uri": "https://app.example.com/?search=ZAP&tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "isOpenDesktop",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpenDesktop=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "301",
+							"uri": "https://app.example.com/?search=ZAP&tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=light\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "291",
+							"uri": "https://app.example.com/actions",
+							"nodeName": "https:\/\/app.example.com\/actions",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=dark\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "265",
+							"uri": "https://app.example.com/admin/login",
+							"nodeName": "https:\/\/app.example.com\/admin\/login",
+							"method": "GET",
+							"param": "collapsedGroups",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: collapsedGroups=\"null\"\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "263",
+							"uri": "https://app.example.com/admin/login",
+							"nodeName": "https:\/\/app.example.com\/admin\/login",
+							"method": "GET",
+							"param": "isOpen",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpen=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "264",
+							"uri": "https://app.example.com/admin/login",
+							"nodeName": "https:\/\/app.example.com\/admin\/login",
+							"method": "GET",
+							"param": "isOpenDesktop",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpenDesktop=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "309",
+							"uri": "https://app.example.com/tables?page=10",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "collapsedGroups",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: collapsedGroups=\"null\"\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "311",
+							"uri": "https://app.example.com/tables?page=10",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "isOpen",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpen=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "310",
+							"uri": "https://app.example.com/tables?page=10",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "isOpenDesktop",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: isOpenDesktop=true\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "308",
+							"uri": "https://app.example.com/tables?page=10",
+							"nodeName": "https:\/\/app.example.com\/tables (page)",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=light\nNote that this alert will only be raised once for each URL + key."
+						},
+						{
+							"id": "295",
+							"uri": "https://app.example.com/widgets",
+							"nodeName": "https:\/\/app.example.com\/widgets",
+							"method": "GET",
+							"param": "theme",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "The following data (key=value) was set: theme=dark\nNote that this alert will only be raised once for each URL + key."
+						}
+					],
+					"count": "18",
+					"systemic": false,
+					"solution": "<p>This is an informational alert and no action is necessary. </p>",
+					"otherinfo": "<p>The following data (key=value) was set: collapsedGroups=\"null\"</p><p>Note that this alert will only be raised once for each URL + key.</p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "2079"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "18",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "112",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						},
+						{
+							"id": "127",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						},
+						{
+							"id": "117",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						},
+						{
+							"id": "63",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"id": "47",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "56",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "49",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "51",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "28",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "27"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-3",
+					"alert": "Sec-Fetch-Dest Header is Missing",
+					"name": "Sec-Fetch-Dest Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
+					"instances":[ 
+						{
+							"id": "26",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "34",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "91",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-2",
+					"alert": "Sec-Fetch-Mode Header is Missing",
+					"name": "Sec-Fetch-Mode Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
+					"instances":[ 
+						{
+							"id": "25",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "33",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "82",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-1",
+					"alert": "Sec-Fetch-Site Header is Missing",
+					"name": "Sec-Fetch-Site Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
+					"instances":[ 
+						{
+							"id": "24",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "72",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90005",
+					"alertRef": "90005-4",
+					"alert": "Sec-Fetch-User Header is Missing",
+					"name": "Sec-Fetch-User Header is Missing",
+					"riskcode": "0",
+					"confidence": "3",
+					"riskdesc": "Informational (High)",
+					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
+					"instances":[ 
+						{
+							"id": "27",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": false,
+					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "76",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:frontpage_visitor\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "0",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:frontpage_visitor\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "152",
+							"uri": "https://app.example.com/auth/session-token",
+							"nodeName": "https:\/\/app.example.com\/auth\/session-token",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN\ncookie:auth_session_insecure"
+						},
+						{
+							"id": "164",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "41",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "141",
+							"uri": "https://app.example.com/diagnostics/server-status",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/server-status",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "48",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "66",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "45",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "43",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "36",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session"
+						}
+					],
+					"count": "11",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:app_visitor</p><p>cookie:app_session</p><p>cookie:techlabs-session</p><p>cookie:frontpage_visitor</p><p>cookie:XSRF-TOKEN</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "18"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-3",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"id": "30",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "7"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>",
+					"instances":[ 
+						{
+							"id": "393",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "391",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "395",
+							"uri": "https://app.example.com/?tag=alpinejs&search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "392",
+							"uri": "https://app.example.com/?tag=alpinejs&search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "394",
+							"uri": "https://app.example.com/?tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (tag)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/</p>",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "24309"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"id": "212",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://app.example.com/?search=ZAP\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsearch=ZAP\n\nThe user-controlled value was:\nzap"
+						},
+						{
+							"id": "285",
+							"uri": "https://app.example.com/?search=ZAP&tag=tailwind-css",
+							"nodeName": "https:\/\/app.example.com\/ (search,tag)",
+							"method": "GET",
+							"param": "search",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://app.example.com/?search=ZAP&tag=tailwind-css\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsearch=ZAP\n\nThe user-controlled value was:\nzap"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://app.example.com/?search=ZAP</p><p></p><p>appears to include user input in:</p><p>a(n) [input] tag [value] attribute</p><p></p><p>The user input found was:</p><p>search=ZAP</p><p></p><p>The user-controlled value was:</p><p>zap</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "104"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

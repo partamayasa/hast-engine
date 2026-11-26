@@ -1,0 +1,1422 @@
+{
+  "_description": "Golden baseline (artefak production, model 43.230 data, 2026-11-07). Dibuat ulang 2026-11-23 dengan tools/regression/generate_baseline.py (keputusan K3).",
+  "_artifacts_sha256": {
+    "ai-model/artifacts/model_random_forest.pkl": "b6211c7325d37aee70999c66f1cf562fa9eddee325429fcdae2e10c5678f4a51",
+    "ai-model/artifacts/tfidf_vectorizer.pkl": "adf575bcff4ee8cc7fa9d57e52f296b2dcad63d691c5b51a34867d8624a53c2d",
+    "ai-model/data/cwe_cvss4_lookup_table.csv": "09c880fb1a715548a3d76b0fff59e1619ef646e3c0d1ecfbde2a5dfabbb2bcf5",
+    "frontend/config/sonar_rules_cache.json": "8be47cb69e5a97d4fe73759dba846e1997735cdc43f3936b5af6a3dd35b7676a",
+    "backend/config/excluded_domains.json": "b7a352108f5939276b52806431e3d5b82e8dd335c0477d2dfe24a56d8f5500fa"
+  },
+  "escalation_rate": 0.1,
+  "excluded_domains": [
+    "facebook.com",
+    "google.com",
+    "google-analytics.com",
+    "googleapis.com",
+    "gstatic.com",
+    "mozilla.com",
+    "mozilla.net",
+    "mozilla.org",
+    "s.w.org",
+    "bunny.net"
+  ],
+  "sast": [
+    {
+      "key_id": "b665723f-83a2-4d0c-adf7-ed8c37c8a177",
+      "cwe_id": "CWE-1004",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/AutoLogin.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "bfce2fe7-87d6-4c9a-81ee-1ab9ecda984c",
+      "cwe_id": "CWE-614",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/AutoLogin.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "8a3f7e3d-4d65-4ac3-95fe-7631e99af99a",
+      "cwe_id": "CWE-352",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/VerifyCsrfToken.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "4c1e728f-883b-440a-bbe7-43ae67e5ef71",
+      "cwe_id": "CWE-614",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Livewire/FrontPage.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "bbdb3df1-70de-46c0-9c4d-c3a3d2e1a3e3",
+      "cwe_id": "CWE-1004",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Livewire/FrontPage.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "cc0ae589-8224-4afe-b6e5-107040cafb2b",
+      "cwe_id": "CWE-614",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Providers/AppServiceProvider.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ddd23654-05a4-4192-a8bf-504507856970",
+      "cwe_id": "CWE-1004",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/app/Providers/AppServiceProvider.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "88901a1a-df28-46a6-9c91-2f0ad6fde4f7",
+      "cwe_id": "CWE-614",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/php.ini",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "eaee99f5-631e-4eb3-8a2e-66c7dd5778ab",
+      "cwe_id": "CWE-1004",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/php.ini",
+      "predicted_cvss4_score": 6.8,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "84068065-ccec-4089-a012-d7eb62ba62da",
+      "cwe_id": "CWE-614",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/routes/web.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "d5f99a78-23ec-4e55-ba53-444f790bddd9",
+      "cwe_id": "CWE-1004",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/routes/web.php",
+      "predicted_cvss4_score": 6.67,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "6fb36fed-3868-4462-815d-ad11c02668ad",
+      "cwe_id": "CWE-79",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "predicted_cvss4_score": 6.29,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "9b5975b5-71af-4608-8f51-d1c6777d8ec6",
+      "cwe_id": "CWE-918",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "c16370d6-2182-418c-b875-670cb036194c",
+      "cwe_id": "CWE-79",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "predicted_cvss4_score": 6.73,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "2615cf7c-677b-4a40-8cb2-bbd87b511946",
+      "cwe_id": "CWE-497",
+      "component": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "predicted_cvss4_score": 7.15,
+      "predicted_severity": "HIGH"
+    },
+    {
+      "key_id": "07f10209-9679-4849-a951-09c9c5437708",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/actions/src/Action.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "48daf518-9a4f-41b5-9f4b-ff642de7083c",
+      "cwe_id": "CWE-546",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/markdown-editor/EasyMDE.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ac7946aa-a7f8-4207-8f2f-729c15aead95",
+      "cwe_id": "CWE-477",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/markdown-editor/EasyMDE.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "0273deb6-5946-4035-9e8d-1b64bc3d01b6",
+      "cwe_id": "CWE-546",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/markdown-editor/EasyMDE.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "367c0aac-5480-42fe-8512-be93fd49745f",
+      "cwe_id": "CWE-477",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/markdown-editor/EasyMDE.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "e1b108d4-8931-416c-a69e-e461e3c997b0",
+      "cwe_id": "CWE-390",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/markdown-editor/EasyMDE.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "7839c973-6b4c-4a56-b369-52aab5b60c19",
+      "cwe_id": "CWE-563",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/rich-editor/extension-custom-block.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "9a54cb43-27f2-475a-a42f-0616a265aaae",
+      "cwe_id": "CWE-563",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/rich-editor/extension-custom-block.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ddfd55f5-b0d9-444c-b7b4-bb1d5abe279a",
+      "cwe_id": "CWE-563",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/js/components/rich-editor/extension-custom-block.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ba7b42a0-fc0b-4c53-b452-bde3a97a19e0",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/resources/views/components/builder/block-picker.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "58fc16f4-53b8-4b76-a9b2-40c4a4e1c9d2",
+      "cwe_id": "CWE-770",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/BaseFileUpload.php",
+      "predicted_cvss4_score": 6.77,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "b9b542ab-110a-4a1c-a75e-c4a48a3d5da2",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/Builder.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "b6aff46f-f7d0-4d55-b77e-9e9d469e435b",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/Builder.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "3f07f6d8-ad0d-4b5a-8ef3-74b122d4a87d",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/CheckboxList.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "68572f3e-277e-4a27-b3d6-330dc5f9e4e1",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/CheckboxList.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "4d0843da-cdf4-4e2c-8593-091304384654",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/CodeEditor.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "a9e8614e-c722-479d-8bd0-dbdb11d5b5c6",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/ColorPicker.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "e94b9842-ee1f-44dd-82d9-58a36bd05da4",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/Concerns/InteractsWithToolbarButtons.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "c7e31a17-5b79-43e9-a9c9-8c3697fadd85",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/DateTimePicker.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "90b3d433-4d0a-4d94-be32-8c57af753290",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/DateTimePicker.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "33dbe4eb-d48b-453d-a242-893fdfd968f7",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/FileUpload.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "fa3076d1-e244-4e32-b402-8f9c171c0e61",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/MarkdownEditor.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "81f81187-2cb9-407d-b548-f843945afeb9",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/OneTimeCodeInput.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "cb6c770b-d761-45b8-aa2d-757010f5a76a",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/RichEditor.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ad5487e2-f097-4f67-9157-607bdd29d6c9",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/forms/src/Components/RichEditor.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "a37151a4-180f-45ed-861c-133543244bca",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/resources/views/components/entry-wrapper.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "2a4ac5fc-5f03-428d-a464-4d315f59b293",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/resources/views/components/entry-wrapper.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "8f0f6cd2-71bf-4bbd-b4ff-acaa92aa4c3d",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/Entry.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "a27c11f1-c511-49d5-b418-d305233199a2",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/Entry.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "731f1ca2-e77b-4e41-9aa5-258cfaa120af",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/Entry.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "aba1cc98-9ca0-47a9-a202-9f2ba915aedc",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/TextEntry.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "bc7f2225-34f2-48a6-8805-c244ed7c158b",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/TextEntry.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "ef2eaddd-c8a0-4b38-80e1-758424b9e836",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/notifications/resources/views/database-notifications.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "abd0738a-47b6-40ab-ae3a-2c34293d31a4",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/notifications/resources/views/database-notifications.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "a9ae1d55-4fad-4a21-abba-81ea2cecb5b7",
+      "cwe_id": "CWE-390",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/resources/js/history-state.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "beabf4ca-d8c1-4cbb-85d0-56cdc7237042",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/resources/views/components/theme-switcher/index.blade.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "4294009c-4dce-4937-9214-3e711b94d5e4",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Auth/MultiFactor/App/AppAuthentication.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "13e62c7d-f63d-4ad6-8f1e-0fe539229df4",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Auth/MultiFactor/App/AppAuthentication.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "42936b60-0a72-4663-94ed-408edc1c8f6f",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Auth/MultiFactor/App/Concerns/InteractsWithAppAuthenticationRecovery.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "03df9c6b-f8f8-4631-815c-6e9194194b60",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Auth/Pages/PasswordReset/ResetPassword.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "e41d205e-3b57-44a7-9e73-77aa1e4d4654",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Auth/Pages/Register.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "aa5fe87c-7b87-4163-98a0-6cdfc80ac6c7",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Pages/Concerns/HasUnsavedDataChangesAlert.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "1a5a425f-22e9-4ae1-90f8-3fdf5fa57e5e",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Pages/Dashboard/Concerns/HasFilters.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "5a9b3ecf-4346-4d35-ad03-371e1289f911",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Pages/Page.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "5aee9e21-e96c-494c-939b-9cf69e533100",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Pages/Page.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "219ff642-f60b-41f4-81ed-7d37c9e77b2c",
+      "cwe_id": "CWE-798",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Panel/Concerns/HasAuth.php",
+      "predicted_cvss4_score": 6.79,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "0c7666fc-2b18-4128-8de7-1ea131868ebc",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Panel/Concerns/HasAuth.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "98ced6b4-7de6-4ab0-b959-93aa9c2cb4b2",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Resources/Resource/Concerns/HasConfiguration.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "c3205a93-6596-4621-8a8a-939caa48ba00",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/panels/src/Resources/Resource/Concerns/HasConfiguration.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "fd8419b9-6e07-40e1-9b2b-c3ea4aa46236",
+      "cwe_id": "CWE-482",
+      "component": "blog-analysis:targets/app.example.com/packages/schemas/resources/js/components/tabs.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "7e92a659-5a3f-4e48-9b31-cb058c5ac5c7",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/schemas/src/Components/Concerns/HasState.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "1800e42f-f7ee-40f8-95aa-b0e84cd30175",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/schemas/src/Components/Text.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "549e38d5-575d-45b6-910b-03ab8bb22385",
+      "cwe_id": "CWE-338",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/js/components/dropdown.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "3c47b4fd-0bda-42fa-a067-3eb68f9e79e4",
+      "cwe_id": "CWE-338",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/js/components/dropdown.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "c533c5b6-e67f-4fec-be38-74a036f3c8b6",
+      "cwe_id": "CWE-338",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/js/utilities/select.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "aaa5b222-6c2d-4e64-81f6-ac1e03f329fb",
+      "cwe_id": "CWE-338",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/js/utilities/select.js",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "81cab6b1-21fd-4e67-9248-05bc105646f5",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/views/components/input/one-time-code.blade.php",
+      "predicted_cvss4_score": 6.75,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "d2966b7d-bf55-4414-a527-beeeeb6d2c70",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/support/resources/views/components/loading-section.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "f61c9759-4c7d-4162-a18f-ad49996f14fa",
+      "cwe_id": "CWE-457",
+      "component": "blog-analysis:targets/app.example.com/packages/support/src/helpers.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "6b8ce528-5169-4d98-8214-e228501d5223",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "e97e0309-64b7-4921-ad76-f12f4887339f",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "01f70ad7-4d5b-4845-a835-1a7309fcefd7",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "0995a7c1-5d1d-429d-b11a-18173d3488d4",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "903cd746-a321-4e4d-96e3-613dccd097f9",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "7838ef2a-3dbd-4200-9177-620d559c5303",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "3f7aa8d8-4b27-4aa6-b24b-452f7eff40af",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "41dbc3c8-6396-42b7-abae-3a636e3fc591",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "35d9aca5-86ed-4c0b-8068-0c124f1f0844",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "f8ad3188-191b-4447-86cf-d8d0ffbe1e45",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/src/Columns/Summarizers/Concerns/CanBeHidden.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "18bd7554-0d1e-434f-ab85-7f8a0a41d553",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/src/Columns/TextColumn.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "dc698239-d529-405a-9376-cd1dcb97132c",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/src/Columns/TextColumn.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "31dab785-e5f4-4eaa-89e2-e8ce73786a5f",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/src/Concerns/InteractsWithTable.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "37f70ba6-3770-46a8-8d52-8e5ab60019cd",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/tables/src/Concerns/InteractsWithTable.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "99cbd924-487f-4fb3-9326-f2c916f6cfda",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/upgrade/src/Commands/UpgradeDirectoryStructureToV4Command.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "c92f8d50-f7ea-40c8-89ed-4dee2cd8ab3b",
+      "cwe_id": "CWE-732",
+      "component": "blog-analysis:targets/app.example.com/packages/upgrade/src/Commands/UpgradeDirectoryStructureToV4Command.php",
+      "predicted_cvss4_score": 6.77,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "7e4b1f0e-be7c-414a-bf31-3127e014ab12",
+      "cwe_id": "CWE-397",
+      "component": "blog-analysis:targets/app.example.com/packages/upgrade/src/Commands/UpgradeDirectoryStructureToV4Command.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "3a304cca-42d1-436b-acc3-8c9cf168e07e",
+      "cwe_id": "CWE-693",
+      "component": "blog-analysis:targets/app.example.com/packages/widgets/resources/views/chart-widget.blade.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "611e7a97-d425-4c94-aa28-95ab86fdc560",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/widgets/src/ChartWidget.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "7a9ea3a9-f3e9-44d7-ba19-23f232fc6ca2",
+      "cwe_id": "CWE-1240",
+      "component": "blog-analysis:targets/app.example.com/packages/widgets/src/StatsOverviewWidget/Stat.php",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    }
+  ],
+  "dast": [
+    {
+      "key_id": "Cross Site Scripting (DOM Based)",
+      "cwe_id": "CWE-79",
+      "component": "GET https://app.example.com?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+      "predicted_cvss4_score": 5.6,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Cross Site Scripting (Reflected)",
+      "cwe_id": "CWE-79",
+      "component": "GET https://app.example.com/?search=%22%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E",
+      "predicted_cvss4_score": 5.6,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "SQL Injection",
+      "cwe_id": "CWE-89",
+      "component": "GET https://app.example.com/?search=ZAP%27",
+      "predicted_cvss4_score": 8.21,
+      "predicted_severity": "HIGH"
+    },
+    {
+      "key_id": "Absence of Anti-CSRF Tokens",
+      "cwe_id": "CWE-352",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 5.51,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Content Security Policy (CSP) Header Not Set",
+      "cwe_id": "CWE-693",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 5.93,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Missing Anti-clickjacking Header",
+      "cwe_id": "CWE-1021",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.77,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Sub Resource Integrity Attribute Missing",
+      "cwe_id": "CWE-345",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.5,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Big Redirect Detected (Potential Sensitive Information Leak)",
+      "cwe_id": "CWE-201",
+      "component": "GET https://app.example.com/admin",
+      "predicted_cvss4_score": 6.74,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Cookie No HttpOnly Flag",
+      "cwe_id": "CWE-1004",
+      "component": "GET https://app.example.com/feedback/submit",
+      "predicted_cvss4_score": 6.52,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Cookie Without Secure Flag",
+      "cwe_id": "CWE-614",
+      "component": "GET https://app.example.com/feedback/submit",
+      "predicted_cvss4_score": 6.73,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Cookie without SameSite Attribute",
+      "cwe_id": "CWE-1275",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.17,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+      "cwe_id": "CWE-497",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.66,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Strict-Transport-Security Header Not Set",
+      "cwe_id": "CWE-319",
+      "component": "GET https://app.example.com/build/assets/app-BvRk9kiK.js",
+      "predicted_cvss4_score": 6.72,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Timestamp Disclosure - Unix",
+      "cwe_id": "CWE-497",
+      "component": "GET https://app.example.com/diagnostics/environment",
+      "predicted_cvss4_score": 6.68,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "X-Content-Type-Options Header Missing",
+      "cwe_id": "CWE-693",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.77,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Hidden File Found",
+      "cwe_id": "CWE-538",
+      "component": "GET https://app.example.com/server-status",
+      "predicted_cvss4_score": 6.77,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Re-examine Cache-control Directives",
+      "cwe_id": "CWE-525",
+      "component": "GET https://app.example.com/diagnostics/debug",
+      "predicted_cvss4_score": 6.82,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "Session Management Response Identified",
+      "cwe_id": "N/A",
+      "component": "GET https://app.example.com",
+      "predicted_cvss4_score": 6.78,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "User Agent Fuzzer",
+      "cwe_id": "N/A",
+      "component": "GET https://app.example.com/",
+      "predicted_cvss4_score": 6.61,
+      "predicted_severity": "MEDIUM"
+    },
+    {
+      "key_id": "User Controllable HTML Element Attribute (Potential XSS)",
+      "cwe_id": "CWE-20",
+      "component": "GET https://app.example.com/?search=ZAP",
+      "predicted_cvss4_score": 5.4,
+      "predicted_severity": "MEDIUM"
+    }
+  ],
+  "hybrid_pairs": [
+    {
+      "cwe_id": "CWE-1004",
+      "key_id_sast": "b665723f-83a2-4d0c-adf7-ed8c37c8a177",
+      "key_id_dast": "Cookie No HttpOnly Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/AutoLogin.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.52,
+      "base_score": 6.6,
+      "hybrid_score": 6.94,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.03,
+      "shap_total_neg": -0.58,
+      "shap_predicted_score": 6.57
+    },
+    {
+      "cwe_id": "CWE-614",
+      "key_id_sast": "bfce2fe7-87d6-4c9a-81ee-1ab9ecda984c",
+      "key_id_dast": "Cookie Without Secure Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/AutoLogin.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.73,
+      "base_score": 6.7,
+      "hybrid_score": 7.03,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.0,
+      "shap_total_neg": -0.08,
+      "shap_predicted_score": 6.72
+    },
+    {
+      "cwe_id": "CWE-352",
+      "key_id_sast": "8a3f7e3d-4d65-4ac3-95fe-7631e99af99a",
+      "key_id_dast": "Absence of Anti-CSRF Tokens",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Http/Middleware/VerifyCsrfToken.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.51,
+      "base_score": 6.14,
+      "hybrid_score": 6.53,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.12,
+      "shap_total_neg": -1.36,
+      "shap_predicted_score": 5.45
+    },
+    {
+      "cwe_id": "CWE-614",
+      "key_id_sast": "4c1e728f-883b-440a-bbe7-43ae67e5ef71",
+      "key_id_dast": "Cookie Without Secure Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Livewire/FrontPage.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.73,
+      "base_score": 6.7,
+      "hybrid_score": 7.03,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.0,
+      "shap_total_neg": -0.08,
+      "shap_predicted_score": 6.72
+    },
+    {
+      "cwe_id": "CWE-1004",
+      "key_id_sast": "bbdb3df1-70de-46c0-9c4d-c3a3d2e1a3e3",
+      "key_id_dast": "Cookie No HttpOnly Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Livewire/FrontPage.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.52,
+      "base_score": 6.6,
+      "hybrid_score": 6.94,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.03,
+      "shap_total_neg": -0.58,
+      "shap_predicted_score": 6.57
+    },
+    {
+      "cwe_id": "CWE-614",
+      "key_id_sast": "cc0ae589-8224-4afe-b6e5-107040cafb2b",
+      "key_id_dast": "Cookie Without Secure Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Providers/AppServiceProvider.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.73,
+      "base_score": 6.7,
+      "hybrid_score": 7.03,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.0,
+      "shap_total_neg": -0.08,
+      "shap_predicted_score": 6.72
+    },
+    {
+      "cwe_id": "CWE-1004",
+      "key_id_sast": "ddd23654-05a4-4192-a8bf-504507856970",
+      "key_id_dast": "Cookie No HttpOnly Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/app/Providers/AppServiceProvider.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.52,
+      "base_score": 6.6,
+      "hybrid_score": 6.94,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.03,
+      "shap_total_neg": -0.58,
+      "shap_predicted_score": 6.57
+    },
+    {
+      "cwe_id": "CWE-614",
+      "key_id_sast": "88901a1a-df28-46a6-9c91-2f0ad6fde4f7",
+      "key_id_dast": "Cookie Without Secure Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/php.ini",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.73,
+      "base_score": 6.7,
+      "hybrid_score": 7.03,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.0,
+      "shap_total_neg": -0.08,
+      "shap_predicted_score": 6.72
+    },
+    {
+      "cwe_id": "CWE-1004",
+      "key_id_sast": "eaee99f5-631e-4eb3-8a2e-66c7dd5778ab",
+      "key_id_dast": "Cookie No HttpOnly Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/php.ini",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.8,
+      "dast_score": 6.52,
+      "base_score": 6.66,
+      "hybrid_score": 6.99,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.04,
+      "shap_total_neg": -0.61,
+      "shap_predicted_score": 6.54
+    },
+    {
+      "cwe_id": "CWE-614",
+      "key_id_sast": "84068065-ccec-4089-a012-d7eb62ba62da",
+      "key_id_dast": "Cookie Without Secure Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/routes/web.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.73,
+      "base_score": 6.7,
+      "hybrid_score": 7.03,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.0,
+      "shap_total_neg": -0.08,
+      "shap_predicted_score": 6.72
+    },
+    {
+      "cwe_id": "CWE-1004",
+      "key_id_sast": "d5f99a78-23ec-4e55-ba53-444f790bddd9",
+      "key_id_dast": "Cookie No HttpOnly Flag",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/routes/web.php",
+      "component_dast": "GET https://app.example.com/feedback/submit",
+      "sast_score": 6.67,
+      "dast_score": 6.52,
+      "base_score": 6.6,
+      "hybrid_score": 6.94,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.03,
+      "shap_total_neg": -0.58,
+      "shap_predicted_score": 6.57
+    },
+    {
+      "cwe_id": "CWE-79",
+      "key_id_sast": "6fb36fed-3868-4462-815d-ad11c02668ad",
+      "key_id_dast": "Cross Site Scripting (DOM Based)",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "component_dast": "GET https://app.example.com?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+      "sast_score": 6.29,
+      "dast_score": 5.6,
+      "base_score": 5.94,
+      "hybrid_score": 6.35,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.49,
+      "shap_total_neg": -1.63,
+      "shap_predicted_score": 5.58
+    },
+    {
+      "cwe_id": "CWE-79",
+      "key_id_sast": "6fb36fed-3868-4462-815d-ad11c02668ad",
+      "key_id_dast": "Cross Site Scripting (Reflected)",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "component_dast": "GET https://app.example.com/?search=%22%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E",
+      "sast_score": 6.29,
+      "dast_score": 5.6,
+      "base_score": 5.94,
+      "hybrid_score": 6.35,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.49,
+      "shap_total_neg": -1.63,
+      "shap_predicted_score": 5.58
+    },
+    {
+      "cwe_id": "CWE-497",
+      "key_id_sast": "2615cf7c-677b-4a40-8cb2-bbd87b511946",
+      "key_id_dast": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 7.15,
+      "dast_score": 6.66,
+      "base_score": 6.9,
+      "hybrid_score": 7.21,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.37,
+      "shap_total_neg": -0.06,
+      "shap_predicted_score": 7.05
+    },
+    {
+      "cwe_id": "CWE-497",
+      "key_id_sast": "2615cf7c-677b-4a40-8cb2-bbd87b511946",
+      "key_id_dast": "Timestamp Disclosure - Unix",
+      "component_sast": "blog-analysis:targets/app.example.com/docs-assets/app/wp-config.php",
+      "component_dast": "GET https://app.example.com/diagnostics/environment",
+      "sast_score": 7.15,
+      "dast_score": 6.68,
+      "base_score": 6.92,
+      "hybrid_score": 7.23,
+      "severity": "HIGH",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.34,
+      "shap_total_neg": -0.07,
+      "shap_predicted_score": 7.05
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "ba7b42a0-fc0b-4c53-b452-bde3a97a19e0",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/resources/views/components/builder/block-picker.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.83,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "3f07f6d8-ad0d-4b5a-8ef3-74b122d4a87d",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/CheckboxList.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "4d0843da-cdf4-4e2c-8593-091304384654",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/CodeEditor.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "a9e8614e-c722-479d-8bd0-dbdb11d5b5c6",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/ColorPicker.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "c7e31a17-5b79-43e9-a9c9-8c3697fadd85",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/DateTimePicker.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "33dbe4eb-d48b-453d-a242-893fdfd968f7",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/FileUpload.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "fa3076d1-e244-4e32-b402-8f9c171c0e61",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/MarkdownEditor.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "81f81187-2cb9-407d-b548-f843945afeb9",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/OneTimeCodeInput.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "cb6c770b-d761-45b8-aa2d-757010f5a76a",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/forms/src/Components/RichEditor.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "a37151a4-180f-45ed-861c-133543244bca",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/infolists/resources/views/components/entry-wrapper.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "8f0f6cd2-71bf-4bbd-b4ff-acaa92aa4c3d",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/Entry.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "aba1cc98-9ca0-47a9-a202-9f2ba915aedc",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/infolists/src/Components/TextEntry.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "ef2eaddd-c8a0-4b38-80e1-758424b9e836",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/notifications/resources/views/database-notifications.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.1
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "beabf4ca-d8c1-4cbb-85d0-56cdc7237042",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/panels/resources/views/components/theme-switcher/index.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "1800e42f-f7ee-40f8-95aa-b0e84cd30175",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/schemas/src/Components/Text.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "81cab6b1-21fd-4e67-9248-05bc105646f5",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/support/resources/views/components/input/one-time-code.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.75,
+      "dast_score": 5.93,
+      "base_score": 6.34,
+      "hybrid_score": 6.71,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.13
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "d2966b7d-bf55-4414-a527-beeeeb6d2c70",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/support/resources/views/components/loading-section.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.83,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "6b8ce528-5169-4d98-8214-e228501d5223",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/tables/resources/views/index.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.23,
+      "shap_total_neg": -0.83,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "18bd7554-0d1e-434f-ab85-7f8a0a41d553",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/tables/src/Columns/TextColumn.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.81,
+      "shap_predicted_score": 6.12
+    },
+    {
+      "cwe_id": "CWE-693",
+      "key_id_sast": "3a304cca-42d1-436b-acc3-8c9cf168e07e",
+      "key_id_dast": "Content Security Policy (CSP) Header Not Set",
+      "component_sast": "blog-analysis:targets/app.example.com/packages/widgets/resources/views/chart-widget.blade.php",
+      "component_dast": "GET https://app.example.com",
+      "sast_score": 6.78,
+      "dast_score": 5.93,
+      "base_score": 6.36,
+      "hybrid_score": 6.72,
+      "severity": "MEDIUM",
+      "is_verified_true_positive": true,
+      "shap_base_value": 6.26,
+      "shap_total_pos": 0.22,
+      "shap_total_neg": -0.82,
+      "shap_predicted_score": 6.12
+    }
+  ]
+}

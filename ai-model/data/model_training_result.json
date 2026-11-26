@@ -1,0 +1,285 @@
+{
+    "test_id": 1792063378,
+    "timestamp": "2026-10-15 19:22:58",
+    "results": {
+        "LightGBM Regressor": {
+            "training_time": 24.81,
+            "accuracy": 0.6273029864461694,
+            "precision": 0.44162648844320634,
+            "recall": 0.40825934301494443,
+            "f1_score": 0.4159214634365075,
+            "mae": 1.1805,
+            "rmse": 1.5555,
+            "r2_score": 0.5581,
+            "confusion_matrix": [
+                [
+                    609,
+                    425,
+                    51,
+                    26
+                ],
+                [
+                    154,
+                    2190,
+                    536,
+                    97
+                ],
+                [
+                    16,
+                    588,
+                    1432,
+                    88
+                ],
+                [
+                    0,
+                    80,
+                    487,
+                    47
+                ]
+            ],
+            "folds": [
+                {
+                    "fold": 1,
+                    "accuracy": 0.6222,
+                    "precision": 0.4376,
+                    "recall": 0.4045,
+                    "f1_score": 0.4117,
+                    "mae": 1.1885,
+                    "rmse": 1.563,
+                    "r2_score": 0.5519,
+                    "training_time": 4.86
+                },
+                {
+                    "fold": 2,
+                    "accuracy": 0.6315,
+                    "precision": 0.4451,
+                    "recall": 0.4115,
+                    "f1_score": 0.4195,
+                    "mae": 1.174,
+                    "rmse": 1.5497,
+                    "r2_score": 0.5632,
+                    "training_time": 5.04
+                },
+                {
+                    "fold": 3,
+                    "accuracy": 0.6255,
+                    "precision": 0.4391,
+                    "recall": 0.4068,
+                    "f1_score": 0.4139,
+                    "mae": 1.1837,
+                    "rmse": 1.5583,
+                    "r2_score": 0.5557,
+                    "training_time": 4.92
+                },
+                {
+                    "fold": 4,
+                    "accuracy": 0.6338,
+                    "precision": 0.4466,
+                    "recall": 0.4124,
+                    "f1_score": 0.4207,
+                    "mae": 1.1715,
+                    "rmse": 1.5473,
+                    "r2_score": 0.5651,
+                    "training_time": 5.07
+                },
+                {
+                    "fold": 5,
+                    "accuracy": 0.6235,
+                    "precision": 0.4396,
+                    "recall": 0.4063,
+                    "f1_score": 0.4137,
+                    "mae": 1.1848,
+                    "rmse": 1.5592,
+                    "r2_score": 0.5546,
+                    "training_time": 4.92
+                }
+            ]
+        },
+        "XGBoost Regressor": {
+            "training_time": 116.91,
+            "accuracy": 0.6176230119729074,
+            "precision": 0.44536461030494934,
+            "recall": 0.4022888525175259,
+            "f1_score": 0.4141095023785023,
+            "mae": 1.2222,
+            "rmse": 1.5892,
+            "r2_score": 0.5387,
+            "confusion_matrix": [
+                [
+                    591,
+                    442,
+                    47,
+                    31
+                ],
+                [
+                    153,
+                    2252,
+                    452,
+                    120
+                ],
+                [
+                    16,
+                    683,
+                    1318,
+                    107
+                ],
+                [
+                    0,
+                    98,
+                    445,
+                    71
+                ]
+            ],
+            "folds": [
+                {
+                    "fold": 1,
+                    "accuracy": 0.6125,
+                    "precision": 0.4414,
+                    "recall": 0.3985,
+                    "f1_score": 0.4099,
+                    "mae": 1.2302,
+                    "rmse": 1.5967,
+                    "r2_score": 0.5325,
+                    "training_time": 22.91
+                },
+                {
+                    "fold": 2,
+                    "accuracy": 0.6218,
+                    "precision": 0.4489,
+                    "recall": 0.4055,
+                    "f1_score": 0.4177,
+                    "mae": 1.2157,
+                    "rmse": 1.5834,
+                    "r2_score": 0.5438,
+                    "training_time": 23.73
+                },
+                {
+                    "fold": 3,
+                    "accuracy": 0.6158,
+                    "precision": 0.4429,
+                    "recall": 0.4008,
+                    "f1_score": 0.4121,
+                    "mae": 1.2254,
+                    "rmse": 1.592,
+                    "r2_score": 0.5363,
+                    "training_time": 23.19
+                },
+                {
+                    "fold": 4,
+                    "accuracy": 0.6241,
+                    "precision": 0.4504,
+                    "recall": 0.4064,
+                    "f1_score": 0.4189,
+                    "mae": 1.2132,
+                    "rmse": 1.581,
+                    "r2_score": 0.5457,
+                    "training_time": 23.9
+                },
+                {
+                    "fold": 5,
+                    "accuracy": 0.6138,
+                    "precision": 0.4434,
+                    "recall": 0.4003,
+                    "f1_score": 0.4119,
+                    "mae": 1.2265,
+                    "rmse": 1.5929,
+                    "r2_score": 0.5352,
+                    "training_time": 23.17
+                }
+            ]
+        },
+        "Random Forest Regressor": {
+            "training_time": 609.42,
+            "accuracy": 0.6461366752227656,
+            "precision": 0.47867139085130567,
+            "recall": 0.44408671028464825,
+            "f1_score": 0.45602042418577876,
+            "mae": 1.0903,
+            "rmse": 1.5172,
+            "r2_score": 0.5796,
+            "confusion_matrix": [
+                [
+                    688,
+                    360,
+                    43,
+                    20
+                ],
+                [
+                    183,
+                    2239,
+                    422,
+                    133
+                ],
+                [
+                    18,
+                    622,
+                    1335,
+                    149
+                ],
+                [
+                    0,
+                    96,
+                    379,
+                    139
+                ]
+            ],
+            "folds": [
+                {
+                    "fold": 1,
+                    "accuracy": 0.641,
+                    "precision": 0.4747,
+                    "recall": 0.4403,
+                    "f1_score": 0.4518,
+                    "mae": 1.0983,
+                    "rmse": 1.5247,
+                    "r2_score": 0.5734,
+                    "training_time": 119.45
+                },
+                {
+                    "fold": 2,
+                    "accuracy": 0.6503,
+                    "precision": 0.4822,
+                    "recall": 0.4473,
+                    "f1_score": 0.4596,
+                    "mae": 1.0838,
+                    "rmse": 1.5114,
+                    "r2_score": 0.5847,
+                    "training_time": 123.71
+                },
+                {
+                    "fold": 3,
+                    "accuracy": 0.6443,
+                    "precision": 0.4762,
+                    "recall": 0.4426,
+                    "f1_score": 0.454,
+                    "mae": 1.0935,
+                    "rmse": 1.52,
+                    "r2_score": 0.5772,
+                    "training_time": 120.91
+                },
+                {
+                    "fold": 4,
+                    "accuracy": 0.6526,
+                    "precision": 0.4837,
+                    "recall": 0.4482,
+                    "f1_score": 0.4608,
+                    "mae": 1.0813,
+                    "rmse": 1.509,
+                    "r2_score": 0.5866,
+                    "training_time": 124.57
+                },
+                {
+                    "fold": 5,
+                    "accuracy": 0.6423,
+                    "precision": 0.4767,
+                    "recall": 0.4421,
+                    "f1_score": 0.4538,
+                    "mae": 1.0946,
+                    "rmse": 1.5209,
+                    "r2_score": 0.5761,
+                    "training_time": 120.79
+                }
+            ]
+        }
+    }
+}

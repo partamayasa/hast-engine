@@ -1,0 +1,51 @@
+{
+  "_note": "Konfigurasi awal DSS. Bobot urutan di dalam setiap prioritas dan nilai SLA adalah TITIK AWAL yang wajar untuk mulai memakai sistem, BUKAN hasil penelitian dan bukan standar industri. Sesuaikan dengan kebijakan organisasi (halaman Pengaturan Prioritas); bila bobot ditetapkan lewat AHP pakar, sumbernya dicatat otomatis.",
+  "method": "TOPSIS",
+  "normalization": "minmax",
+  "weighting_source": "config",
+  "criteria": [
+    {"code": "C1", "key": "hybrid_score", "label": "Tingkat keparahan", "direction": "benefit", "weight": 0.35, "enabled": true},
+    {"code": "C2", "key": "true_positive", "label": "Terdeteksi kedua pemindai (kode dan aplikasi berjalan)", "direction": "benefit", "weight": 0.15, "enabled": true},
+    {"code": "C3", "key": "exploitability", "label": "Kemudahan dieksploitasi (profil CWE)", "direction": "benefit", "weight": 0.10, "enabled": true},
+    {"code": "C4", "key": "impact", "label": "Dampak teknis (profil CWE)", "direction": "benefit", "weight": 0.05, "enabled": true},
+    {"code": "C5", "key": "prevalence", "label": "Cakupan, ln(1 + jumlah lokasi terdampak)", "direction": "benefit", "weight": 0.10, "enabled": true},
+    {"code": "C6", "key": "asset_criticality", "label": "Dampak bisnis", "direction": "benefit", "weight": 0.20, "enabled": true},
+    {"code": "C7", "key": "remediation_effort", "label": "Upaya perbaikan", "direction": "cost", "weight": 0.05, "enabled": true}
+  ],
+  "asset_criticality": {
+    "default": 3,
+    "rules": []
+  },
+  "remediation_effort": {"default": 3},
+  "recommendation_rules": [
+    {"id": "R1", "priority": "P1", "action": "REMEDIATE_NOW", "when": {"severity_in": ["CRITICAL"], "true_positive": true},
+     "text": "Keparahan CRITICAL dan terdeteksi di kode serta aplikasi berjalan."},
+    {"id": "R2", "priority": "P1", "action": "REMEDIATE_NOW", "when": {"severity_in": ["HIGH"], "true_positive": true, "min_business_impact": 4},
+     "text": "Keparahan HIGH, terdeteksi kedua pemindai, dan menyentuh aset dengan dampak bisnis tinggi."},
+    {"id": "R3", "priority": "P2", "action": "REMEDIATE_SCHEDULED", "when": {"severity_in": ["CRITICAL", "HIGH"]},
+     "text": "Keparahan HIGH/CRITICAL."},
+    {"id": "R4", "priority": "P2", "action": "REMEDIATE_SCHEDULED", "when": {"severity_in": ["MEDIUM"], "true_positive": true, "min_business_impact": 4},
+     "text": "Keparahan MEDIUM, terdeteksi kedua pemindai, dan menyentuh aset dengan dampak bisnis tinggi."},
+    {"id": "R5", "priority": "P3", "action": "PLAN", "when": {"severity_in": ["MEDIUM"]},
+     "text": "Keparahan MEDIUM."},
+    {"id": "R9", "priority": "P4", "action": "REVIEW_OR_ACCEPT", "when": {},
+     "text": "Keparahan rendah: pantau atau terima risikonya."}
+  ],
+  "sla_days": {
+    "REMEDIATE_NOW": 7,
+    "REMEDIATE_SCHEDULED": 30,
+    "PLAN": 90,
+    "REVIEW_OR_ACCEPT": null
+  },
+  "review": {
+    "_note": "Heuristik penanda 'Perlu diperiksa', bukan ukuran statistik: skor dalam jarak threshold_margin dari batas kelas keparahan, atau kata-kata laporan menggeser penilaian model kurang dari min_text_evidence (jumlah |SHAP| token yang hadir).",
+    "threshold_margin": 0.3,
+    "min_text_evidence": 0.5
+  },
+  "ahp": {
+    "criteria": [],
+    "matrix": null,
+    "consistency_ratio": null,
+    "source": null
+  }
+}

@@ -1,0 +1,1531 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Tue, 13 Oct 2026 07:14:46",
+	"created": "2026-10-12T23:14:46.830025500Z",
+	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.error",
+			"description": "ZAP errors logged - see the zap.log file for details",
+			"statistic": "16"
+		},
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.warn",
+			"description": "ZAP warnings logged - see the zap.log file for details",
+			"statistic": "19"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "86"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.4xx",
+			"description": "Percentage of responses with status code 4xx",
+			"statistic": "11"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.code.5xx",
+			"description": "Percentage of responses with status code 5xx",
+			"statistic": "1"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.application/javascript",
+			"description": "Percentage of endpoints with content type application/javascript",
+			"statistic": "23"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.application/json",
+			"description": "Percentage of endpoints with content type application/json",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/css",
+			"description": "Percentage of endpoints with content type text/css",
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/html",
+			"description": "Percentage of endpoints with content type text/html",
+			"statistic": "64"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.ctype.text/plain",
+			"description": "Percentage of endpoints with content type text/plain",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "87"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.method.POST",
+			"description": "Percentage of endpoints with method POST",
+			"statistic": "12"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "39"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://app.example.com",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "7"
+		}
+	],
+	"site":[ 
+		{
+			"@name": "https://app.example.com",
+			"@host": "app.example.com",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "40026",
+					"alertRef": "40026",
+					"alert": "Cross Site Scripting (DOM Based)",
+					"name": "Cross Site Scripting (DOM Based)",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p><p>When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p><p></p><p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p><p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p><p>Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>",
+					"instances":[ 
+						{
+							"id": "419",
+							"uri": "https://app.example.com?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "?name=abc#<img src=\"random.gif\" onerror=alert(5397)>",
+							"evidence": "",
+							"otherinfo": "The following steps were done to trigger the DOM XSS:\nWith <PAYLOAD_0> as: ?name=abc#<img src=\"random.gif\" onerror=alert(5397)>\nAccess: https://app.example.com<PAYLOAD_0>\nWrite to /html/body/div[1]/section[2]/div[1]/div[2]/form/input the value: <PAYLOAD_0>\nClick element: /html/body/div[1]/section[2]/div[1]/div[2]/form/input\nAccess: https://app.example.com<PAYLOAD_0>\nWrite to /html/body/div[1]/section[4]/div[1]/div/form/input the value: <PAYLOAD_0>\nClick element: /html/body/div[1]/section[4]/div[1]/div/form/input\n"
+						},
+						{
+							"id": "420",
+							"uri": "https://app.example.com/?search=ZAP?name=<img src=\"random.gif\" onerror=alert(5397)>",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "",
+							"attack": "?name=<img src=\"random.gif\" onerror=alert(5397)>",
+							"evidence": "",
+							"otherinfo": "The following steps were done to trigger the DOM XSS:\nWith <PAYLOAD_0> as: ?name=<img src=\"random.gif\" onerror=alert(5397)>\nAccess: https://app.example.com/?search=ZAP<PAYLOAD_0>\n"
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p><p></p><p>Phases: Implementation; Architecture and Design</p><p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p><p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p><p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p><p></p><p>Phase: Architecture and Design</p><p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p><p></p><p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p><p></p><p>Phase: Implementation</p><p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p><p></p><p>To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p><p></p><p>Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p><p></p><p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as \"red\" or \"blue.\"</p><p></p><p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p><p>\t</p>",
+					"otherinfo": "<p>The following steps were done to trigger the DOM XSS:</p><p>With <PAYLOAD_0> as: ?name=abc#<img src=\"random.gif\" onerror=alert(5397)></p><p>Access: https://app.example.com<PAYLOAD_0></p><p>Write to /html/body/div[1]/section[2]/div[1]/div[2]/form/input the value: <PAYLOAD_0></p><p>Click element: /html/body/div[1]/section[2]/div[1]/div[2]/form/input</p><p>Access: https://app.example.com<PAYLOAD_0></p><p>Write to /html/body/div[1]/section[4]/div[1]/div/form/input the value: <PAYLOAD_0></p><p>Click element: /html/body/div[1]/section[4]/div[1]/div/form/input</p><p></p>",
+					"reference": "<p>https://owasp.org/www-community/attacks/xss/</p><p>https://cwe.mitre.org/data/definitions/79.html</p>",
+					"cweid": "79",
+					"wascid": "8",
+					"sourceid": "134"
+				},
+				{
+					"pluginid": "40012",
+					"alertRef": "40012",
+					"alert": "Cross Site Scripting (Reflected)",
+					"name": "Cross Site Scripting (Reflected)",
+					"riskcode": "3",
+					"confidence": "2",
+					"riskdesc": "High (Medium)",
+					"desc": "<p>Cross-site Scripting (XSS) is an attack technique that involves echoing attacker-supplied code into a user's browser instance. A browser instance can be a standard web browser client, or a browser object embedded in a software product such as the browser within WinAmp, an RSS reader, or an email client. The code itself is usually written in HTML/JavaScript, but may also extend to VBScript, ActiveX, Java, Flash, or any other browser-supported technology.</p><p>When an attacker gets a user's browser to execute his/her code, the code will run within the security context (or zone) of the hosting web site. With this level of privilege, the code has the ability to read, modify and transmit any sensitive data accessible by the browser. A Cross-site Scripted user could have his/her account hijacked (cookie theft), their browser redirected to another location, or possibly shown fraudulent content delivered by the web site they are visiting. Cross-site Scripting attacks essentially compromise the trust relationship between a user and the web site. Applications utilizing browser object instances which load content from the file system may execute code under the local machine zone allowing for system compromise.</p><p></p><p>There are three types of Cross-site Scripting attacks: non-persistent, persistent and DOM-based.</p><p>Non-persistent attacks and DOM-based attacks require a user to either visit a specially crafted link laced with malicious code, or visit a malicious web page containing a web form, which when posted to the vulnerable site, will mount the attack. Using a malicious form will oftentimes take place when the vulnerable resource only accepts HTTP POST requests. In such a case, the form can be submitted automatically, without the victim's knowledge (e.g. by using JavaScript). Upon clicking on the malicious link or submitting the malicious form, the XSS payload will get echoed back and will get interpreted by the user's browser and execute. Another technique to send almost arbitrary requests (GET and POST) is by using an embedded client, such as Adobe Flash.</p><p>Persistent attacks occur when the malicious code is submitted to a web site where it's stored for a period of time. Examples of an attacker's favorite targets often include message board posts, web mail messages, and web chat software. The unsuspecting user is not required to interact with any additional site/link (e.g. an attacker site or a malicious link sent via email), just simply view the web page containing the code.</p>",
+					"instances":[ 
+						{
+							"id": "415",
+							"uri": "https://app.example.com/?search=%22%3E%3CscrIpt%3Ealert%281%29%3B%3C%2FscRipt%3E",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "\"><scrIpt>alert(1);</scRipt>",
+							"evidence": "\"><scrIpt>alert(1);</scRipt>",
+							"otherinfo": ""
+						},
+						{
+							"id": "416",
+							"uri": "https://app.example.com/newsletter/subscribe",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/subscribe ()(email)",
+							"method": "POST",
+							"param": "email",
+							"attack": "'\"<img src=x onerror=prompt()>",
+							"evidence": "'\"<img src=x onerror=prompt()>",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>Examples of libraries and frameworks that make it easier to generate properly encoded output include Microsoft's Anti-XSS library, the OWASP ESAPI Encoding module, and Apache Wicket.</p><p></p><p>Phases: Implementation; Architecture and Design</p><p>Understand the context in which your data will be used and the encoding that will be expected. This is especially important when transmitting data between different components, or when generating outputs that can contain multiple encodings at the same time, such as web pages or multi-part mail messages. Study all expected communication protocols and data representations to determine the required encoding strategies.</p><p>For any data that will be output to another web page, especially any data that was received from external inputs, use the appropriate encoding on all non-alphanumeric characters.</p><p>Consult the XSS Prevention Cheat Sheet for more details on the types of encoding and escaping that are needed.</p><p></p><p>Phase: Architecture and Design</p><p>For any security checks that are performed on the client side, ensure that these checks are duplicated on the server side, in order to avoid CWE-602. Attackers can bypass the client-side checks by modifying values after the checks have been performed, or by changing the client to remove the client-side checks entirely. Then, these modified values would be submitted to the server.</p><p></p><p>If available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p><p></p><p>Phase: Implementation</p><p>For every web page that is generated, use and specify a character encoding such as ISO-8859-1 or UTF-8. When an encoding is not specified, the web browser may choose a different encoding by guessing which encoding is actually being used by the web page. This can cause the web browser to treat certain sequences as special, opening up the client to subtle XSS attacks. See CWE-116 for more mitigations related to encoding/escaping.</p><p></p><p>To help mitigate XSS attacks against the user's session cookie, set the session cookie to be HttpOnly. In browsers that support the HttpOnly feature (such as more recent versions of Internet Explorer and Firefox), this attribute can prevent the user's session cookie from being accessible to malicious client-side scripts that use document.cookie. This is not a complete solution, since HttpOnly is not supported by all browsers. More importantly, XMLHTTPRequest and other powerful browser technologies provide read access to HTTP headers, including the Set-Cookie header in which the HttpOnly flag is set.</p><p></p><p>Assume all input is malicious. Use an \"accept known good\" input validation strategy, i.e., use an allow list of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a deny list). However, deny lists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.</p><p></p><p>When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, \"boat\" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as \"red\" or \"blue.\"</p><p></p><p>Ensure that you perform input validation at well-defined interfaces within the application. This will help protect the application even if a component is reused or moved elsewhere.</p><p>\t</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/attacks/xss/</p><p>https://cwe.mitre.org/data/definitions/79.html</p>",
+					"cweid": "79",
+					"wascid": "8",
+					"sourceid": "130"
+				},
+				{
+					"pluginid": "40018",
+					"alertRef": "40018",
+					"alert": "SQL Injection",
+					"name": "SQL Injection",
+					"riskcode": "3",
+					"confidence": "1",
+					"riskdesc": "High (Low)",
+					"desc": "<p>SQL injection may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "418",
+							"uri": "https://app.example.com/?search=ZAP%27",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "ZAP'",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Do not trust client side input, even if there is client side validation in place.</p><p>In general, type check all data on the server side.</p><p>If the application uses JDBC, use PreparedStatement or CallableStatement, with parameters passed by '?'</p><p>If the application uses ASP, use ADO Command Objects with strong type checking and parameterized queries.</p><p>If database Stored Procedures can be used, use them.</p><p>Do *not* concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!</p><p>Do not create dynamic SQL queries using simple string concatenation.</p><p>Escape all data received from the client.</p><p>Apply an 'allow list' of allowed characters, or a 'deny list' of disallowed characters in user input.</p><p>Apply the principle of least privilege by using the least privileged database user possible.</p><p>In particular, avoid using the 'sa' or 'db-owner' database users. This does not eliminate SQL injection, but minimizes its impact.</p><p>Grant the minimum database access that is necessary for the application.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</p>",
+					"cweid": "89",
+					"wascid": "19",
+					"sourceid": "133"
+				},
+				{
+					"pluginid": "10202",
+					"alertRef": "10202",
+					"alert": "Absence of Anti-CSRF Tokens",
+					"name": "Absence of Anti-CSRF Tokens",
+					"riskcode": "2",
+					"confidence": "1",
+					"riskdesc": "Medium (Low)",
+					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
+					"instances":[ 
+						{
+							"id": "46",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/newsletter/subscribe\" method=\"POST\" class=\"mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"email\" ]."
+						},
+						{
+							"id": "28",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/feedback/submit\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"\" ]."
+						},
+						{
+							"id": "27",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/funds/transfer\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"account\" \"amount\" ]."
+						},
+						{
+							"id": "87",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/newsletter/join\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"email\" ]."
+						},
+						{
+							"id": "79",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"POST\" action=\"/profile/update-email\">",
+							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"new_email\" ]."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 2: \"email\" ].</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10038",
+					"alertRef": "10038-1",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"id": "29",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "9",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "10",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "62",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "56",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
+					"instances":[ 
+						{
+							"id": "4",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "6",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "5",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "54",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "52",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
+					"instances":[ 
+						{
+							"id": "47",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "229",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "259",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "327",
+							"uri": "https://app.example.com/actions",
+							"nodeName": "https:\/\/app.example.com\/actions",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "309",
+							"uri": "https://app.example.com/forms/overview",
+							"nodeName": "https:\/\/app.example.com\/forms\/overview",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://fonts.bunny.net/css?family=inter:300,400,500,600,700&amp;display=swap\" rel=\"stylesheet\">",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044-1",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"id": "231",
+							"uri": "https://app.example.com/admin",
+							"nodeName": "https:\/\/app.example.com\/admin",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 46 [https://app.example.com/admin/login].\nPredicted response size: 346.\nResponse Body Length: 430."
+						},
+						{
+							"id": "263",
+							"uri": "https://app.example.com/newsletter/subscribe",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/subscribe ()(email)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 34 [https://app.example.com].\nPredicted response size: 334.\nResponse Body Length: 382."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 46 [https://app.example.com/admin/login].</p><p>Predicted response size: 346.</p><p>Response Body Length: 430.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "68"
+				},
+				{
+					"pluginid": "10010",
+					"alertRef": "10010",
+					"alert": "Cookie No HttpOnly Flag",
+					"name": "Cookie No HttpOnly Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
+					"instances":[ 
+						{
+							"id": "11",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "Set-Cookie: techlabs-session",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "14",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
+					"cweid": "1004",
+					"wascid": "13",
+					"sourceid": "16"
+				},
+				{
+					"pluginid": "10011",
+					"alertRef": "10011",
+					"alert": "Cookie Without Secure Flag",
+					"name": "Cookie Without Secure Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
+					"instances":[ 
+						{
+							"id": "22",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "24",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						},
+						{
+							"id": "21",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "25",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "Set-Cookie: techlabs-session",
+							"otherinfo": ""
+						},
+						{
+							"id": "23",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "XSRF-TOKEN",
+							"attack": "",
+							"evidence": "Set-Cookie: XSRF-TOKEN",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p>",
+					"cweid": "614",
+					"wascid": "13",
+					"sourceid": "16"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054-1",
+					"alert": "Cookie without SameSite Attribute",
+					"name": "Cookie without SameSite Attribute",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"id": "36",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "18",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "20",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "app_session",
+							"attack": "",
+							"evidence": "Set-Cookie: app_session",
+							"otherinfo": ""
+						},
+						{
+							"id": "17",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_provider_state",
+							"attack": "",
+							"evidence": "Set-Cookie: app_provider_state",
+							"otherinfo": ""
+						},
+						{
+							"id": "19",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_session",
+							"attack": "",
+							"evidence": "Set-Cookie: app_session",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10037",
+					"alertRef": "10037",
+					"alert": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"name": "Server Leaks Information via \"X-Powered-By\" HTTP Response Header Field(s)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
+					"instances":[ 
+						{
+							"id": "49",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.26",
+							"otherinfo": ""
+						},
+						{
+							"id": "83",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.26",
+							"otherinfo": ""
+						},
+						{
+							"id": "37",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.26",
+							"otherinfo": ""
+						},
+						{
+							"id": "41",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.26",
+							"otherinfo": ""
+						},
+						{
+							"id": "95",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: PHP/8.4.26",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</p><p>https://www.troyhunt.com/shhh-dont-let-your-response-headers/</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035-1",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"id": "224",
+							"uri": "https://app.example.com/build/assets/app-BvRk9kiK.js",
+							"nodeName": "https:\/\/app.example.com\/build\/assets\/app-BvRk9kiK.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "225",
+							"uri": "https://app.example.com/js/filament/actions/actions.js?v=527e2be19eaec12c2de944e851d5373c677640b10bdb08175fa6d6626bdbb02d",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/actions\/actions.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "234",
+							"uri": "https://app.example.com/js/filament/notifications/notifications.js?v=64425668fe4d97fbdf3a3982e0ee94106f102bf5209b7d999fc40ca3c9fecd92",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/notifications\/notifications.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "227",
+							"uri": "https://app.example.com/js/filament/schemas/schemas.js?v=522715eaddf76ab7f24975c52e4b0afac333544ca2fe2f9f7a128410de025a3a",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/schemas\/schemas.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "242",
+							"uri": "https://app.example.com/js/filament/tables/tables.js?v=612e40030807d394e8f1a22f04e26c87a19b1e52427e127a8006e0da3deaf544",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/tables\/tables.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "57"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
+					"instances":[ 
+						{
+							"id": "148",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1791845314",
+							"otherinfo": "1791845314, which evaluates to: 2026-10-13 06:48:34."
+						},
+						{
+							"id": "392",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1732584194",
+							"otherinfo": "1732584194, which evaluates to: 2024-11-26 09:23:14."
+						},
+						{
+							"id": "394",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1770035416",
+							"otherinfo": "1770035416, which evaluates to: 2026-02-02 20:30:16."
+						},
+						{
+							"id": "395",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1958414417",
+							"otherinfo": "1958414417, which evaluates to: 2032-01-23 04:00:17."
+						},
+						{
+							"id": "393",
+							"uri": "https://app.example.com/js/filament/support/support.js?v=5843294f2451869ac9a74e19a54d578f30392b881cbe6922b38a1f7539eb90f6",
+							"nodeName": "https:\/\/app.example.com\/js\/filament\/support\/support.js (v)",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2004318071",
+							"otherinfo": "2004318071, which evaluates to: 2033-07-07 11:01:11."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1791845314, which evaluates to: 2026-10-13 06:48:34.</p>",
+					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
+					"cweid": "497",
+					"wascid": "13",
+					"sourceid": "34"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"id": "48",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "81",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "35",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "39",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "31",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "40035",
+					"alertRef": "40035",
+					"alert": "Hidden File Found",
+					"name": "Hidden File Found",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>",
+					"instances":[ 
+						{
+							"id": "421",
+							"uri": "https://app.example.com/server-status",
+							"nodeName": "https:\/\/app.example.com\/server-status",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 403 Forbidden",
+							"otherinfo": "apache_server_status"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Consider whether or not the component is actually required in production, if it isn't then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>",
+					"otherinfo": "<p>apache_server_status</p>",
+					"reference": "<p>https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</p><p>https://httpd.apache.org/docs/current/mod/mod_status.html</p>",
+					"cweid": "538",
+					"wascid": "13",
+					"sourceid": "136"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"id": "59",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "8",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "7",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "55",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "no-cache, private",
+							"otherinfo": ""
+						},
+						{
+							"id": "3",
+							"uri": "https://app.example.com/robots.txt",
+							"nodeName": "https:\/\/app.example.com\/robots.txt",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "max-age=315360000",
+							"otherinfo": ""
+						}
+					],
+					"count": "5",
+					"systemic": true,
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "25"
+				},
+				{
+					"pluginid": "10112",
+					"alertRef": "10112",
+					"alert": "Session Management Response Identified",
+					"name": "Session Management Response Identified",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
+					"instances":[ 
+						{
+							"id": "102",
+							"uri": "https://app.example.com",
+							"nodeName": "https:\/\/app.example.com",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:frontpage_visitor\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "185",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:frontpage_visitor\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "243",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:frontpage_visitor\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "312",
+							"uri": "https://app.example.com/actions",
+							"nodeName": "https:\/\/app.example.com\/actions",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "228",
+							"uri": "https://app.example.com/admin",
+							"nodeName": "https:\/\/app.example.com\/admin",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session"
+						},
+						{
+							"id": "286",
+							"uri": "https://app.example.com/admin/login",
+							"nodeName": "https:\/\/app.example.com\/admin\/login",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "345",
+							"uri": "https://app.example.com/admin/password-reset/request",
+							"nodeName": "https:\/\/app.example.com\/admin\/password-reset\/request",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "365",
+							"uri": "https://app.example.com/admin/register",
+							"nodeName": "https:\/\/app.example.com\/admin\/register",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "100",
+							"uri": "https://app.example.com/auth/session-token",
+							"nodeName": "https:\/\/app.example.com\/auth\/session-token",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN\ncookie:auth_session_insecure"
+						},
+						{
+							"id": "53",
+							"uri": "https://app.example.com/diagnostics/debug",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/debug",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "97",
+							"uri": "https://app.example.com/diagnostics/environment",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/environment",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "272",
+							"uri": "https://app.example.com/diagnostics/phpinfo",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/phpinfo",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "101",
+							"uri": "https://app.example.com/diagnostics/server-status",
+							"nodeName": "https:\/\/app.example.com\/diagnostics\/server-status",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "298",
+							"uri": "https://app.example.com/forms/overview",
+							"nodeName": "https:\/\/app.example.com\/forms\/overview",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "0",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "51",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "50",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session\ncookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "88",
+							"uri": "https://app.example.com/sitemap.xml",
+							"nodeName": "https:\/\/app.example.com\/sitemap.xml",
+							"method": "GET",
+							"param": "app_visitor",
+							"attack": "",
+							"evidence": "app_visitor",
+							"otherinfo": "cookie:app_visitor\ncookie:app_session"
+						},
+						{
+							"id": "341",
+							"uri": "https://app.example.com/tables",
+							"nodeName": "https:\/\/app.example.com\/tables",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "328",
+							"uri": "https://app.example.com/widgets",
+							"nodeName": "https:\/\/app.example.com\/widgets",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "166",
+							"uri": "https://app.example.com/feedback/submit",
+							"nodeName": "https:\/\/app.example.com\/feedback\/submit ()(message)",
+							"method": "POST",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "181",
+							"uri": "https://app.example.com/funds/transfer",
+							"nodeName": "https:\/\/app.example.com\/funds\/transfer ()(account,amount)",
+							"method": "POST",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "183",
+							"uri": "https://app.example.com/newsletter/join",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/join ()(email)",
+							"method": "POST",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "258",
+							"uri": "https://app.example.com/newsletter/subscribe",
+							"nodeName": "https:\/\/app.example.com\/newsletter\/subscribe ()(email)",
+							"method": "POST",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "147",
+							"uri": "https://app.example.com/profile/update-email",
+							"nodeName": "https:\/\/app.example.com\/profile\/update-email ()(new_email)",
+							"method": "POST",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session\ncookie:XSRF-TOKEN"
+						},
+						{
+							"id": "197",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "techlabs-session",
+							"attack": "",
+							"evidence": "techlabs-session",
+							"otherinfo": "cookie:techlabs-session"
+						},
+						{
+							"id": "104",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "frontpage_visitor",
+							"attack": "",
+							"evidence": "frontpage_visitor",
+							"otherinfo": "cookie:frontpage_visitor"
+						}
+					],
+					"count": "27",
+					"systemic": false,
+					"solution": "<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>",
+					"otherinfo": "<p>cookie:app_visitor</p><p>cookie:app_session</p><p>cookie:techlabs-session</p><p>cookie:frontpage_visitor</p><p>cookie:XSRF-TOKEN</p>",
+					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "29"
+				},
+				{
+					"pluginid": "10104",
+					"alertRef": "10104",
+					"alert": "User Agent Fuzzer",
+					"name": "User Agent Fuzzer",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>",
+					"instances":[ 
+						{
+							"id": "423",
+							"uri": "https://app.example.com/",
+							"nodeName": "https:\/\/app.example.com\/",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "424",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "422",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "Header User-Agent",
+							"attack": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)",
+							"evidence": "",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/wstg</p>",
+					"cweid": "0",
+					"wascid": "0",
+					"sourceid": "138"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"id": "260",
+							"uri": "https://app.example.com/?search=ZAP",
+							"nodeName": "https:\/\/app.example.com\/ (search)",
+							"method": "GET",
+							"param": "search",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://app.example.com/?search=ZAP\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsearch=ZAP\n\nThe user-controlled value was:\nzap"
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://app.example.com/?search=ZAP</p><p></p><p>appears to include user input in:</p><p>a(n) [input] tag [value] attribute</p><p></p><p>The user input found was:</p><p>search=ZAP</p><p></p><p>The user-controlled value was:</p><p>zap</p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "75"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

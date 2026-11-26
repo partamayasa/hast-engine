@@ -1,0 +1,11 @@
+{
+  "api_title": "DSS Prioritas Remediasi Kerentanan",
+  "api_description": "Aplikasi Web Berbasis Explainable AI dan CVSS v4.0",
+  "app_version": "1.0.0",
+  "active_model": "Random Forest",
+  "escalation_rate": 0.1,
+  "variety_cwe": 547,
+  "number_cvss4_records": 43230,
+  "dataset_timestamp": "2026-10-13",
+  "last_updated": "2026-11-07"
+}

@@ -1,0 +1,14 @@
+{
+  "unprocessing_domains": [
+    "facebook.com",
+    "google.com",
+    "google-analytics.com",
+    "googleapis.com",
+    "gstatic.com",
+    "mozilla.com",
+    "mozilla.net",
+    "mozilla.org",
+    "s.w.org",
+    "bunny.net"
+  ]
+}
